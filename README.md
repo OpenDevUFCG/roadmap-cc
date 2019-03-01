@@ -1,4 +1,5 @@
-# Roadmap CC  [![Join the chat at https://gitter.im/roadmap-cc/community](https://badges.gitter.im/roadmap-cc/community.svg)](https://gitter.im/roadmap-cc/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Join the chat at https://gitter.im/OpenDevUFCG/roadmap-cc](https://badges.gitter.im/OpenDevUFCG/roadmap-cc.svg)](https://gitter.im/OpenDevUFCG/roadmap-cc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+# Roadmap CC [![Join the chat at https://gitter.im/OpenDevUFCG/roadmap-cc](https://badges.gitter.im/OpenDevUFCG/roadmap-cc.svg)](https://gitter.im/OpenDevUFCG/roadmap-cc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ![RoadMap CC Logo](https://i.imgur.com/rCKBR0t.png)
 
