@@ -14,6 +14,10 @@ O **Roadmap CC** tem como objetivo criar um *mapa colaborativo* com os melhores 
 ![](https://raw.githubusercontent.com/OpenDevUFCG/roadmap-cc/master/assets/img/roadmapcc-tree.png)
 > Você pode ter acesso ao arquivo em pdf [aqui](assets/roadmap.pdf). Nele, ao clicar no nome da disciplina, temos acessos as dicas das cadeiras fornecidas pelo [Tamburetei](https://github.com/OpenDevUFCG/Tamburetei.git)
 
+## Dados
+
+Tem interesse em saber como conseguimos esses dados? Acesse nossa [wiki](https://github.com/OpenDevUFCG/roadmap-cc/wiki/RoadMap-CC---Wiki)
+
 ## Como Contribuir
 
 Quer sugerir alguma mudança no mapa? Criar uma nova ordem de cadeiras? Abra uma [issue](https://github.com/OpenDevUFCG/roadmap-cc/issues/new) e conversa com a gente!
