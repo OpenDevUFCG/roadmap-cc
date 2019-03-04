@@ -3,8 +3,17 @@
 
 ![RoadMap CC Logo](https://i.imgur.com/rCKBR0t.png)
 
-> Roadmap ou "roteiro" para se tornar um cientista da computação na UFCG, a idéia é colocar gráficos, baseados em comentários de pessoas que já pagaram as disciplinas, demonstrando os caminhos que você precisa seguir, para ter um melhor aproveitamento do curso. Sabemos que com a nova grade, os pré-requisitos em sua grande maioria, foram deixados em aberto, o que causou grande confusão nas pessoas sobre a ordem que deveriam colocar as cadeiras. Esse repositório é destinado a todas as pessoas que se perguntam "Qual cadeira eu devo colocar no próximo semestre sem ser prejudicado por não ter pago uma anterior?"
+Roadmap para se tornar uma cientista da computação na UFCG.
+
+## Objetivo
+
+O **Roadmap CC** tem como objetivo criar um *mapa colaborativo* com os melhores caminhos para cursar sua graduação em Computação na UFCG. A idéia é ser baseado em comentários e experiências dos alunos para traçar a melhor ordem de cadeiras por período, os pré-requisitos que podem ser considerados, cadeiras que são boas de serem pagas em conjunto e etc.
+
+## Primeira versão
 
 ![](https://raw.githubusercontent.com/OpenDevUFCG/roadmap-cc/master/assets/img/roadmapcc-tree.png)
-
 > Você pode ter acesso ao arquivo em pdf [aqui](roadmap.pdf). Nele, ao clicar no nome da disciplina, temos acessos as dicas das cadeiras fornecidas pelo [Tamburetei](https://github.com/OpenDevUFCG/Tamburetei.git)
+
+## Como Contribuir
+
+Quer sugerir alguma mudança no mapa? Criar uma nova ordem de cadeiras? Abra uma [issue](https://github.com/OpenDevUFCG/roadmap-cc/issues/new) e conversa com a gente!
