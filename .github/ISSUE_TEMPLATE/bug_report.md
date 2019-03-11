@@ -7,32 +7,32 @@ assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+**Descrição da falha**
+Uma descrição clara e concisa de qual é a falha.
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+**Como reproduzir a falha**
+Passos para reproduzir o comportamento:
+1. Vá para '...'
+2. Click em '....'
+3. Role para baixo até '....'
+4. Veja a falha
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+**Comportamento esperado**
+Uma descrição clara e concisa do que você espera que aconteça.
 
 **Screenshots**
-If applicable, add screenshots to help explain your problem.
+Se possível, adicionar screenshots para ajudar a explicar o problema.
 
-**Desktop (please complete the following information):**
+**Desktop (por favor, indique em qual dispositivo você encontrou o problema):**
  - OS: [e.g. iOS]
  - Browser [e.g. chrome, safari]
  - Version [e.g. 22]
 
-**Smartphone (please complete the following information):**
+**Smartphone**
  - Device: [e.g. iPhone6]
  - OS: [e.g. iOS8.1]
  - Browser [e.g. stock browser, safari]
  - Version [e.g. 22]
 
-**Additional context**
-Add any other context about the problem here.
+**Contexto adicional**
+Adicione qualquer informação extra que tenha sobre o problema.
