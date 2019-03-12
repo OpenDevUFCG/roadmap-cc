@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-**Sua requisição de feature é relacionado a um problema? Por favor descreva.**
+**Sua requisição de feature é relacionada a um problema? Por favor descreva.**
 Uma descrição clara e concisa sobre de que se trata o problema. Por exemplo: Eu sempre me frusto quando [...]
 
 **Descreva a solução que você gostaria**
