@@ -4,11 +4,6 @@
 ![RoadMap CC Logo](https://i.imgur.com/rCKBR0t.png)
 
 Roadmap para se tornar uma cientista da computação na UFCG.
-
-## Objetivo
-
-O **Roadmap CC** tem como objetivo criar um *mapa colaborativo* com os melhores caminhos para cursar sua graduação em Computação na UFCG. A idéia é ser baseado em comentários e experiências dos alunos para traçar a melhor ordem de cadeiras por período, os pré-requisitos que podem ser considerados, cadeiras que são boas de serem pagas em conjunto e etc.
-
 ## Primeira versão
 
 ![](https://raw.githubusercontent.com/OpenDevUFCG/roadmap-cc/master/assets/img/roadmapcc-tree.png)
