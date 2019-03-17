@@ -18,13 +18,36 @@ Para os iniciantes que quiserem ingressar em alguma [issue] é recomendado
 que ele filtre as issues com a tag "[good first issue]". Nela você verá 
 issues mais simples de serem resolvidas. 
 
+## Como contribuir?
+
+### Passo 1
+
 Para resolver uma issue, pedimos ao contribuidor que crie um fork do 
 repositório como mostra o gif abaixo:
 
 ![fork]
+
+Isso é importante pois ajuda a movimentar o repositório e ajuda a propagar
+que você está contribuindo para um projeto open source :smile:. 
+
+### Passo 2
+
+Pedimos que ao iniciar uma resolução de issue, assine ela para que outras
+pessoas não tentem resolver também. Além disso, pedimos para adicionar a 
+tag "em andamento" para que seja possível filtrar as issues que já estão
+sendo resolvidas em [issue]. 
+
+### Passo 3
+
+Ao finalizar sua contribuição, realize o Pull request para a branch "development".
+Nela mantemos sempre uma versão de desenvolvimento que, ao final das implementações
+esperadas para aquela versão, será lançada para produção na branch "master".
+
+![pr]
 
 [nova issue]: https://github.com/OpenDevUFCG/roadmap-cc/issues/new/choose
 [gitter]: https://gitter.im/OpenDevUFCG/roadmap-cc
 [issue]: https://github.com/OpenDevUFCG/roadmap-cc/issues
 [good first issue]: https://github.com/OpenDevUFCG/roadmap-cc/issues?q=is%3Aopen+is%3Aissue+label%3A%22%5C%22good+first+issue%5C%22%22
 [fork]: .github/GIFS/fork.gif
+[pr]: .github/GIFS/pr.gif
