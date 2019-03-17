@@ -1,3 +1,5 @@
+# roadmap-cc
+
 
 # Roadmap CC [![Join the chat at https://gitter.im/OpenDevUFCG/roadmap-cc](https://badges.gitter.im/OpenDevUFCG/roadmap-cc.svg)](https://gitter.im/OpenDevUFCG/roadmap-cc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -5,11 +7,25 @@
 
 Roadmap para se tornar uma cientista da computação na UFCG.
 
-## Objetivo
+## Build Setup
 
+``` bash
+# instalar dependências
+$ yarn install
 
-![](https://raw.githubusercontent.com/OpenDevUFCG/roadmap-cc/master/assets/img/roadmapcc-tree.png)
-> Você pode ter acesso ao arquivo em pdf [aqui](assets/roadmap.pdf). Nele, ao clicar no nome da disciplina, temos acessos as dicas das cadeiras fornecidas pelo [Tamburetei](https://github.com/OpenDevUFCG/Tamburetei.git)
+# servindo localmente com "hot reload" em localhost:3000
+$ yarn run dev
+
+# construindo para produção e inicializando servidor
+$ yarn run build
+$ yarn start
+
+# gerando projeto estático
+$ yarn run generate
+```
+=======
+
+Para explicação detalhada de como as coisas funcionam, verifique a [documentação do Nuxt.js](https://nuxtjs.org).
 
 ## Dados
 
