@@ -23,6 +23,7 @@ $ yarn start
 # gerando projeto estático
 $ yarn run generate
 ```
+=======
 
 Para explicação detalhada de como as coisas funcionam, verifique a [documentação do Nuxt.js](https://nuxtjs.org).
 
