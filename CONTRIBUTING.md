@@ -60,7 +60,7 @@ não tem problemas, os mantedores irão fazer isso ao avaliar sua issue.
 
 Por fim, um mantedor avaliará a sua issue e verá a possibilidade de executar
 na versão atual ou congelar sua issue para a próxima versão. Se a issue
-por adicionada ao projeto, será possível ver ela no [taskboard] das próximas
+for adicionada ao projeto, será possível ver ela no [taskboard] das próximas
 ações. 
 
 ## Como contribuir?
