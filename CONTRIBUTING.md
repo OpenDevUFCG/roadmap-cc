@@ -3,16 +3,16 @@
 ## Contato
 
 Quer contribuir para o roadmap-cc? Estamos abertos a sugestões, melhorias,
-soluções de bugs e qualquer outra melhoria que você tenha a nos apresentar.
+soluções de bugs e qualquer outra contribuição que você tenha a nos apresentar.
 Para realizar sua contribuição, entre em contato conosco através de uma
 [nova issue] e siga os passos da próxima sessão. Essa é a melhor forma 
-para você nos contactar formalmente, mas também usamos o [gitter], ferramenta
+para você nos contactar formalmente, mas também usamos o [gitter], chat 
 open source que você pode entrar em contato para ter uma resposta mais rápida
-e informal por lá. Contudo, reinforçamos que o gitter é uma ferramenta de teor
+e informal por lá. Contudo, reforçamos que o gitter é uma ferramenta de teor
 informal, precisamos centralizar todas as issues no repositório para manter
 a transparência e coerência das features.
 
-## Como suger issue?
+## Como sugerir uma nova feature, melhoria ou correçāo de bug?
 
 ### Passo 1
 
@@ -24,7 +24,11 @@ que ajude a entender melhor sua issue, poderá ser feita nela.
 
 É necessário que você adicione em "Projects" o projeto de "Taskboard" para 
 que os mantedores do repositório possam filtrar as issues que cabem na versão
-atual do repositório ou vão para uma versão futura. É pedido que você não assine
+atual do repositório ou vão para uma versão futura. 
+
+![taskboard]
+
+É pedido que você não assine
 a issue até que tenha tido feedback de um mantedor e for implementar sua 
 solução. Para mais detalhes, você poderá checar a sessão abaixo para saber
 como contribuir.
@@ -114,3 +118,4 @@ fazer parte do repositório.
 [good first issue]: https://github.com/OpenDevUFCG/roadmap-cc/issues?q=is%3Aopen+is%3Aissue+label%3A%22%5C%22good+first+issue%5C%22%22
 [fork]: .github/GIFS/fork.gif
 [pr]: .github/GIFS/pr.gif
+[taskboard]: .github/GIFS/taskboard.gif
