@@ -1,7 +1,6 @@
 # Guia de Contribuição
 
 ## Contato
-![](https://img.icons8.com/dusk/100/000000/speech-bubble-with-dots.png)
 
 Quer contribuir para o roadmap-cc? Estamos abertos a sugestões, melhorias,
 soluções de bugs e qualquer outra contribuição que você tenha a nos apresentar.
@@ -14,7 +13,6 @@ informal, precisamos centralizar todas as issues no repositório para manter
 a transparência e coerência das features.
 
 ## Como sugerir uma nova feature, melhoria ou correçāo de bug?
-![](https://img.icons8.com/dusk/100/000000/teamwork.png)
 
 ### Passo 1
 
@@ -66,7 +64,6 @@ for adicionada ao projeto, será possível ver ela no [taskboard] das próximas
 ações. 
 
 ## Como contribuir?
-![](https://img.icons8.com/dusk/100/000000/code.png)
 
 ### Passo 1
 
@@ -114,15 +111,14 @@ realizar sugestões de melhorias, e, após avaliado, o código passará a
 fazer parte do repositório.
 
 ## Criação e uso das branchs
-![](https://img.icons8.com/dusk/100/000000/code-fork.png)
 
 1. Padronização nos nomes das branchs: `num_issue-breve-descricao-da-issue`  
 Por exemplo: `26-adiciona_readme`
 
-2. Branchs seguras: Temos duas branchs principais, a `master`, e a `developing`,   
+2. Branchs seguras: Temos duas branchs principais, a `master`, e a `development`,   
 é a partir dessa  que criamos as outras branchs para desenvolvimento de features,  
 correção de bugs e etc..., e vamos trabalhando nessas coisas, quando o código delas  
-estiver pronto, pedimos merge para `developing`. Finalmente, quando uma versão do  
+estiver pronto, pedimos merge para `development`. Finalmente, quando uma versão do  
 projeto estiver finalizada os próprios maintainers irão mesclar a `master`. 
 
 *Obs*: Tomamos essa decisão para garantir que a branch `master` sempre contenha uma versão completa, estável e funcional.
