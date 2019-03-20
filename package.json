@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "d3": "^5.9.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3"
   }
 }
