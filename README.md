@@ -40,7 +40,7 @@ Alteramos a versão Maior(MAJOR), quando fazemos mudanças incompatíveis na API
 Alteramos a versão Menor(MINOR), quando adicionamos funcionalidades mantendo compatibilidade com o que existe,   
 Alteramos a versão de Correção(PATCH), quando corrigimos falhas mantendo a compatibilidade.
 
-Nos baseamos no [SemVer], verique o link para mais informações.  
+Nos baseamos no [SemVer], verifique o link para mais informações.  
 Para visualizar as versões disponíveis, veja as [tags] do nosso repositório.
 
 ## Como Contribuir
