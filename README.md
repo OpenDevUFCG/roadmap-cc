@@ -23,7 +23,6 @@ $ yarn start
 # gerando projeto estático
 $ yarn run generate
 ```
-=======
 
 Para explicação detalhada de como as coisas funcionam, verifique a [documentação do Nuxt.js].
 
@@ -47,8 +46,8 @@ Para visualizar as versões disponíveis, veja as [tags] do nosso repositório.
 
 Quer sugerir alguma mudança no mapa? Criar uma nova ordem de cadeiras? Abra uma [issue] e conversa com a gente!
 
-[documentação do Nuxt.js]:(https://nuxtjs.org)
-[wiki]: (https://github.com/OpenDevUFCG/roadmap-cc/wiki/RoadMap-CC---Wiki)
-[tags]: (https://github.com/OpenDevUFCG/roadmap-cc/tags)
-[SemVer]: (https://semver.org/lang/pt-BR/)
-[issue]: (https://github.com/OpenDevUFCG/roadmap-cc/issues/new)
+[documentação do Nuxt.js]: https://nuxtjs.org
+[wiki]: https://github.com/OpenDevUFCG/roadmap-cc/wiki/RoadMap-CC---Wiki
+[tags]: https://github.com/OpenDevUFCG/roadmap-cc/tags
+[SemVer]: https://semver.org/lang/pt-BR/
+[issue]: https://github.com/OpenDevUFCG/roadmap-cc/issues/new

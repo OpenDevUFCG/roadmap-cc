@@ -17,7 +17,8 @@
     "cross-env": "^5.2.0",
     "nuxt": "^2.4.0",
     "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/pwa": "^2.6.0"
+    "@nuxtjs/pwa": "^2.6.0",
+    "d3": "^5.9.2"
   },
   "devDependencies": {
     "nodemon": "^1.18.9",

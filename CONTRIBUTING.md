@@ -112,6 +112,19 @@ Ao ser avaliado, a PR passará por um revisor do repositório e ele poderá
 realizar sugestões de melhorias, e, após avaliado, o código passará a 
 fazer parte do repositório.
 
+## Criação e uso das branchs
+
+1. Padronização nos nomes das branchs: `num_issue-breve-descricao-da-issue`  
+Por exemplo: `26-adiciona_readme`
+
+2. Branchs seguras: Temos duas branchs principais, a `master`, e a `development`,   
+é a partir dessa  que criamos as outras branchs para desenvolvimento de features,  
+correção de bugs etc, e vamos trabalhando nessas coisas, quando o código delas  
+estiver pronto, pedimos merge para `development`. Finalmente, quando uma versão do  
+projeto estiver finalizada os próprios maintainers irão mesclar a `master`. 
+
+*Obs*: Tomamos essa decisão para garantir que a branch `master` sempre contenha uma versão completa, estável e funcional.
+
 
 
 [nova issue]: https://github.com/OpenDevUFCG/roadmap-cc/issues/new/choose
