@@ -117,7 +117,7 @@ Por exemplo: `26-adiciona_readme`
 
 2. Branchs seguras: Temos duas branchs principais, a `master`, e a `development`,   
 é a partir dessa  que criamos as outras branchs para desenvolvimento de features,  
-correção de bugs e etc..., e vamos trabalhando nessas coisas, quando o código delas  
+correção de bugs etc, e vamos trabalhando nessas coisas, quando o código delas  
 estiver pronto, pedimos merge para `development`. Finalmente, quando uma versão do  
 projeto estiver finalizada os próprios maintainers irão mesclar a `master`. 
 
