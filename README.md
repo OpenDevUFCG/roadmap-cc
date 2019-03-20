@@ -25,12 +25,30 @@ $ yarn run generate
 ```
 =======
 
-Para explicação detalhada de como as coisas funcionam, verifique a [documentação do Nuxt.js](https://nuxtjs.org).
+Para explicação detalhada de como as coisas funcionam, verifique a [documentação do Nuxt.js].
 
 ## Dados
 
-Tem interesse em saber como conseguimos esses dados? Acesse nossa [wiki](https://github.com/OpenDevUFCG/roadmap-cc/wiki/RoadMap-CC---Wiki)
+Tem interesse em saber como conseguimos esses dados? Acesse nossa [wiki]
+
+## Versionamento
+
+Cada versão nossa, tem o seguinte formato:  
+`MAJOR.MINOR.PATCH`  
+Por exemplo: `1.0.0`  
+Alteramos a versão Maior(MAJOR), quando fazemos mudanças incompatíveis na API existente,  
+Alteramos a versão Menor(MINOR), quando adicionamos funcionalidades mantendo compatibilidade com o que existe,   
+Alteramos a versão de Correção(PATCH), quando corrigimos falhas mantendo a compatibilidade.
+
+Nos baseamos no [SemVer], verifique o link para mais informações.  
+Para visualizar as versões disponíveis, veja as [tags] do nosso repositório.
 
 ## Como Contribuir
 
-Quer sugerir alguma mudança no mapa? Criar uma nova ordem de cadeiras? Abra uma [issue](https://github.com/OpenDevUFCG/roadmap-cc/issues/new) e conversa com a gente!
+Quer sugerir alguma mudança no mapa? Criar uma nova ordem de cadeiras? Abra uma [issue] e conversa com a gente!
+
+[documentação do Nuxt.js]:(https://nuxtjs.org)
+[wiki]: (https://github.com/OpenDevUFCG/roadmap-cc/wiki/RoadMap-CC---Wiki)
+[tags]: (https://github.com/OpenDevUFCG/roadmap-cc/tags)
+[SemVer]: (https://semver.org/lang/pt-BR/)
+[issue]: (https://github.com/OpenDevUFCG/roadmap-cc/issues/new)
