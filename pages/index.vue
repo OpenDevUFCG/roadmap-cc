@@ -1,7 +1,16 @@
 <template>
-  <section class="container"></section>
+  <section class="container">
+    <graphic-visualization />
+  </section>
 </template>
-
+<script>
+import GraphicVisualization from '@/components/GraphicVisualization.vue'
+export default {
+  components: {
+    GraphicVisualization
+  }
+}
+</script>
 <style>
 .container {
   margin: 0 auto;
