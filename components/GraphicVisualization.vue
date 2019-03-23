@@ -14,11 +14,7 @@ export default {
   data() {
     return {
       width: 0,
-      height: 0,
-      style: {
-        stroke: '#006600',
-        fill: '#006600'
-      }
+      height: 0
     }
   },
   mounted() {
