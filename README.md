@@ -1,10 +1,23 @@
-# Roadmap CC [![Join the chat at https://gitter.im/OpenDevUFCG/roadmap-cc](https://badges.gitter.im/OpenDevUFCG/roadmap-cc.svg)](https://gitter.im/OpenDevUFCG/roadmap-cc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.com/OpenDevUFCG/roadmap-cc.svg?branch=development)](https://travis-ci.com/OpenDevUFCG/roadmap-cc) [![testado with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest) [![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest)
+<p align="center">
+  <img src="https://i.imgur.com/rCKBR0t.png"
+            alt="RoadMap CC Logo">
+</p>
 
-![RoadMap CC Logo](https://i.imgur.com/rCKBR0t.png)
-
+<p align="center">
+  <a href="https://travis-ci.com/OpenDevUFCG/roadmap-cc">
+        <img src="https://travis-ci.com/OpenDevUFCG/roadmap-cc.svg?branch=development"
+            alt="Build Status"></a>
+  <a href="https://github.com/facebook/jest">
+        <img src="https://img.shields.io/badge/tested_with-jest-99424f.svg"
+            alt="testado com jest"></a>
+  <a href="https://discord.gg/HjJCwm5">
+        <img src="https://img.shields.io/discord/558293573494112257.svg?logo=discord"
+            alt="chat on Discord"></a>
+<p>
+  
 Roadmap para se tornar uma cientista da computação na UFCG.
 
-## Build Setup
+## Configuração de Instalação
 
 ``` bash
 # instalar dependências
