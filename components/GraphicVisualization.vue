@@ -14,17 +14,24 @@ export default {
   data() {
     return {
       width: 0,
-      height: 0
+      height: 0,
+      subjects: []
     }
   },
   mounted() {
     window.addEventListener('resize', this.onResize)
     this.onResize()
+    this.getSubjects()
   },
   methods: {
     onResize() {
       this.width = this.$el.offsetWidth
       this.height = this.$el.offsetHeight
+    },
+    async getSubjects() {
+      this.subjects = await this.$axios.get(
+        'https://laguinho.opendevufcg.org/v1/subjects'
+      )
     }
   }
 }
