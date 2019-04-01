@@ -20,6 +20,10 @@ Roadmap para se tornar uma cientista da computação na UFCG.
 ## Configuração de Instalação
 
 ``` bash
+# clonando o repositório
+$ git clone https://github.com/OpenDevUFCG/roadmap-cc.git
+$ cd roadmap-cc
+
 # instalar dependências
 $ yarn install
 
