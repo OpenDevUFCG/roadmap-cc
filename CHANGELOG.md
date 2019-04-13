@@ -6,6 +6,8 @@ O formato é baseado no [Mantenha um Changelog](https://keepachangelog.com/pt-BR
 e nós aderimos ao sistema de versionamento [SemVer](https://semver.org/lang/pt-BR/).
 
 ## [Não publicado]
+- csv com relacionamento entre as disciplinas
+- site com grafo interativo com visualização da relação entre as disciplinas obrigatórias
 
 ## [1.0.0] - 2018-03-11
 ### Adicionado
