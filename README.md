@@ -10,7 +10,7 @@
   <a href="https://github.com/facebook/jest">
         <img src="https://img.shields.io/badge/tested_with-jest-99424f.svg"
             alt="testado com jest"></a>
-  <a href="https://discordapp.com/invite/vFFGGEE">
+  <a href="https://discordapp.com/invite/YT7NvM">
         <img src="https://img.shields.io/discord/558293573494112257.svg?logo=discord"
             alt="chat on Discord"></a>
 <p>
