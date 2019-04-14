@@ -25,22 +25,12 @@ Ao criar uma [nova issue], você terá dois *templates* que poderão ser usados
 para preencher as informações que esperamos da sua issue. Qualquer informação
 que ajude a entender melhor sua issue, poderá ser feita nela.
 
-### Passo 2
-
-É necessário que você adicione em *Projects* o projeto de *Taskboard* para 
-que os mantedores do repositório possam filtrar as issues que cabem na versão
-atual do repositório ou vão para uma versão futura. 
-
-![taskboard]
-
 É sugerido que você não implemente sua solução até receber um *feedback* de um
 mantedor, pois eles saberão informar se a sua alteração é viável para a versão
 atual. Para mais detalhes, você poderá checar a sessão de [Como contribuir?].
 
-### Passo 3
-
-Tente adicionar as labels que melhor descreva a sua issue. Temos as seguintes
-labels que podem ser utilizadas:
+Ao ser avaliado, mantedores irão adicionar as labels que melhor descrevam a
+sua issue. Temos as seguintes labels que serão utilizadas:
 
 | tags               | quando utilizar                                      |
 | ------------------ |:----------------------------------------------------:|
@@ -57,10 +47,8 @@ labels que podem ser utilizadas:
 | sugestão           | poderia ser feito essa melhoria                      |
 | wontfix            | alguma interface que não esteja funcionando          |
 
-Se não conseguir identificar as outras tags corretamente,
-não tem problemas, os mantedores irão fazer isso ao avaliar sua issue.
 
-### Passo 4
+### Passo 2
 
 Por fim, um mantedor avaliará a sua issue e verá a possibilidade de executar
 na versão atual ou congelar sua issue para a próxima versão. Se a issue
@@ -95,9 +83,8 @@ que você está contribuindo para um projeto open source :smile:.
 
 ### Passo 3
 
-Pedimos que ao iniciar uma resolução de issue, marque a issue com a label 
-**em andamento** para que seja possível que outros contribuidores filtrem
-issues que não estejam sendo solucionadas. 
+Pedimos que ao iniciar uma resolução de issue, certifique-se que a issue foi
+marcada com a label **em andamento** por um mantedor. 
 Assim é possível filtrar as [issues que não estão sendo resolvidas]. 
 
 ### Passo 4
