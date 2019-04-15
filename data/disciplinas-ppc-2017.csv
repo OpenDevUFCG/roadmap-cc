@@ -13,18 +13,18 @@ codigo,nome,categoria,creditos,pre_requisitos,periodo,quantidade_vagas,areas,dic
 1411307,Lógica para Computação,Obrigatório,4,1411312,3,"55, 60",,https://github.com/OpenDevUFCG/Tamburetei/tree/master/logica,LÓGICA
 1411305,Estrutura de Dados,Obrigatório,4,"1411168, 1411181",3,"86, 90",,https://github.com/OpenDevUFCG/Tamburetei/tree/master/eda_leda,EDA
 1411306,Laboratório de Estrutura de Dados,Obrigatório,4,"1411168, 1411181",3,"80, 90",,https://github.com/OpenDevUFCG/Tamburetei/tree/master/eda_leda,LEDA
-1114129,Introdução à Probabilidade,Obrigatório,4,"1109103, 1411312",4,"100, 50",,,
+1114129,Introdução à Probabilidade,Obrigatório,4,"1109103, 1411312",4,"100, 50",,https://github.com/OpenDevUFCG/Tamburetei/tree/master/probabilidade,PROB
 1411308,Projeto de Software,Obrigatório,4,"1411167, 1411180",4,"80, 70",,https://github.com/OpenDevUFCG/Tamburetei/tree/master/psoft,PSOFT
-1411309,Paradigmas de Linguagens de Programação,Obrigatório,4,"1411167, 1411180",4,"83, 90",,,
-1411193,Banco de dados I,Obrigatório,4,1411305,4,"80, 80",,,
-1411310,Organização e Arquitetura de Computadores,Obrigatório,4,1411174,4,"75, 140",,,
-1411182,Laboratório de Organização e Arquitetura de Computadores,Obrigatório,4,1411174,4,"69, 140",,,
-1114222,Estatística Aplicada,Obrigatório,4,1114129,5,"45, 65",,,
-1411313,Análise de Sistemas,Obrigatório,4,"1411167, 1411180",5,"78, 45",,,
-1411314,Engenharia de Software,Obrigatório,4,"1411167, 1411180",5,"60, 60",,,
-1411190,Redes de Computadores,Obrigatório,4,1411174,5,"50, 105",,,
-1411192,Sistemas Operacionais,Obrigatório,4,"1411310, 1411182",5,"45, 70",,,
-1411171,Teoria da Computação,Obrigatório,4,1411309,5,"80, 50",,,
+1411309,Paradigmas de Linguagens de Programação,Obrigatório,4,"1411167, 1411180",4,"83, 90",,https://github.com/OpenDevUFCG/Tamburetei/tree/master/plp,PLP
+1411193,Banco de dados I,Obrigatório,4,1411305,4,"80, 80",,https://github.com/OpenDevUFCG/Tamburetei/tree/master/bd,BD
+1411310,Organização e Arquitetura de Computadores,Obrigatório,4,1411174,4,"75, 140",,https://github.com/OpenDevUFCG/Tamburetei/tree/master/oac,OAC
+1411182,Laboratório de Organização e Arquitetura de Computadores,Obrigatório,4,1411174,4,"69, 140",,https://github.com/OpenDevUFCG/Tamburetei/tree/master/loac,LOAC
+1114222,Estatística Aplicada,Obrigatório,4,1114129,5,"45, 65",,https://github.com/OpenDevUFCG/Tamburetei/tree/master/estatistica,ESTATISTICA
+1411313,Análise de Sistemas,Obrigatório,4,"1411167, 1411180",5,"78, 45",,https://github.com/OpenDevUFCG/Tamburetei/tree/master/as,AS
+1411314,Engenharia de Software,Obrigatório,4,"1411167, 1411180",5,"60, 60",,https://github.com/OpenDevUFCG/Tamburetei/tree/master/es,ES
+1411190,Redes de Computadores,Obrigatório,4,1411174,5,"50, 105",,https://github.com/OpenDevUFCG/Tamburetei/tree/master/redes,REDES
+1411192,Sistemas Operacionais,Obrigatório,4,"1411310, 1411182",5,"45, 70",,https://github.com/OpenDevUFCG/Tamburetei/tree/master/so,SO
+1411171,Teoria da Computação,Obrigatório,4,1411309,5,"80, 50",,https://github.com/OpenDevUFCG/Tamburetei/tree/master/tc,TC
 1305218,Metodologia Científica,Obrigatório,4,1114222,6,"50, -",,,
 1411315,Programação Concorrente,Obrigatório,4,1411192,6,"35, 45",,,
 1411316,Inteligência Artificial,Obrigatório,4,1411309,6,"48, 110",,,
