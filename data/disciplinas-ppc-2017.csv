@@ -27,8 +27,8 @@ codigo,nome,categoria,creditos,pre_requisitos,periodo,quantidade_vagas,areas,dic
 1411171,Teoria da Computação,Obrigatório,4,1411309,5,"80, 50",,https://github.com/OpenDevUFCG/Tamburetei/tree/master/tc,TC
 1305218,Metodologia Científica,Obrigatório,4,1114222,6,"50, -",,,
 1411315,Programação Concorrente,Obrigatório,4,1411192,6,"35, 45",,,
-1411316,Inteligência Artificial,Obrigatório,4,1411309,6,"48, 110",,,
-1411187,Análise e Técnicas de Algoritmos,Obrigatório,4,"1411305, 1411306",7,"60, 70",,,
+1411316,Inteligência Artificial,Obrigatório,4,1411309,6,"48, 110",,,IA
+1411187,Análise e Técnicas de Algoritmos,Obrigatório,4,"1411305, 1411306",7,"60, 70",,,ATAL
 1411189,Compiladores,Obrigatório,4,1411309,7,"40, 80",,,
 1411185,Projeto em Computação I,Obrigatório,4,1411314,8,"45, 50",,,
 1411317,Projeto de Trabalho de Conclusão de Curso,Obrigatório,4,-,8,"-, 20",,,
@@ -36,10 +36,10 @@ codigo,nome,categoria,creditos,pre_requisitos,periodo,quantidade_vagas,areas,dic
 1411318,Trabalho de Conclusão de Curso,Obrigatório,4,1411317,9,"-, -",,,
 1411320,Administração de Sistemas,Optativa Específica,4,-,-,"-, 33",,,
 1411198,Administração de Sistemas Gerenciadores de Bancos de Dados,Optativa Específica,4,1411193,-,"-,-",,,
-1411321,Algoritmos Avançados I,Optativa Específica,4,-,-,"40, -",,,
-1411322,Algoritmos Avançados II,Optativa Específica,4,-,-,"-, 45",,,
-1411323,Algoritmos Avançados III,Optativa Específica,4,-,-,"-,-",,,
-1411324,Algoritmos Avançados IV,Optativa Específica,4,-,-,"-,-",,,
+1411321,Algoritmos Avançados I,Optativa Específica,4,-,-,"40, -",,,AA
+1411322,Algoritmos Avançados II,Optativa Específica,4,-,-,"-, 45",,,AA
+1411323,Algoritmos Avançados III,Optativa Específica,4,-,-,"-,-",,,AA
+1411324,Algoritmos Avançados IV,Optativa Específica,4,-,-,"-,-",,,AA
 1411325,Arquitetura de Software,Optativa Específica,4,1411308,-,"-,-",,,
 1411197,Avaliação de Desempenho de Sistemas Discretos,Optativa Específica,4,1114129,-,"40,45",,,
 1411194,Banco de Dados II,Optativa Específica,4,1411193,-,"40,45",,,
