@@ -37,9 +37,9 @@ codigo,nome,categoria,creditos,pre_requisitos,periodo,quantidade_vagas,areas,dic
 1411320,Administração de Sistemas,Optativa Específica,4,-,-,"-, 33",,,
 1411198,Administração de Sistemas Gerenciadores de Bancos de Dados,Optativa Específica,4,1411193,-,"-,-",,,
 1411321,Algoritmos Avançados I,Optativa Específica,4,-,-,"40, -",,,AA
-1411322,Algoritmos Avançados II,Optativa Específica,4,-,-,"-, 45",,,
-1411323,Algoritmos Avançados III,Optativa Específica,4,-,-,"-,-",,,
-1411324,Algoritmos Avançados IV,Optativa Específica,4,-,-,"-,-",,,
+1411322,Algoritmos Avançados II,Optativa Específica,4,-,-,"-, 45",,,AA
+1411323,Algoritmos Avançados III,Optativa Específica,4,-,-,"-,-",,,AA
+1411324,Algoritmos Avançados IV,Optativa Específica,4,-,-,"-,-",,,AA
 1411325,Arquitetura de Software,Optativa Específica,4,1411308,-,"-,-",,,
 1411197,Avaliação de Desempenho de Sistemas Discretos,Optativa Específica,4,1114129,-,"40,45",,,
 1411194,Banco de Dados II,Optativa Específica,4,1411193,-,"40,45",,,
