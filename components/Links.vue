@@ -24,7 +24,7 @@ export default {
 }
 </script>
 <style>
-#link {
+#links {
   fill: none;
   stroke: #000000;
   stroke-width: 1px;
