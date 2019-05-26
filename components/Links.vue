@@ -1,7 +1,7 @@
 <template>
   <g>
     <path
-      id="link"
+      id="links"
       :d="`M ${source.x}, ${source.y} L ${target.x}, ${target.y}`"
     />
   </g>
@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'Link',
+  name: 'Links',
   props: {
     target: {
       type: Object
