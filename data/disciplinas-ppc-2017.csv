@@ -87,7 +87,7 @@ codigo,nome,categoria,creditos,pre_requisitos,periodo,quantidade_vagas,areas,dic
 1307169,Língua Portuguesa,Optativa Geral,4,-,-,"95, 100",,,
 1411319,Atividades Complementares Flexíveis,Complementar,22,-,-,"-,-",,,
 1411290,TECC(JOGOS DIGITAIS),Optativa Específica,4,-,-,"40, 40",Dev,,
-1411302,TECC(PROGRAMACAO FUNCIONAL),Optativa Específica,4,"1411169, 1411309",-,"45, 45",Dev,,
+1411302,TECC(PROGRAMACAO FUNCIONAL),Optativa Específica,4,1411309,-,"45, 45",Dev,,
 1411356,TECC(CIÊNCIA DE DADOS PREDITIVA),Optativa Específica,4,1114222,-,"-, 35",Inteligência,,
 1411355,TECC(VISUALIZAÇÃO DE DADOS),Optativa Específica,4,1114129,-,"-, 35",Inteligência,,
 1411357,TECC(GOVERNANCA DA INTERNET),Optativa Específica,4,1411190,-,"-,-",Geral,,
