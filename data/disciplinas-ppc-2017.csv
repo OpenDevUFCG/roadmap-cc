@@ -61,7 +61,7 @@ codigo,nome,categoria,creditos,pre_requisitos,periodo,quantidade_vagas,areas,dic
 1411336,Programação em Banco de Dados,Optativa Específica,4,1411193,-,"-,-",Dev,,
 1411217,Projeto de Redes de Computadores,Optativa Específica,4,1411190,-,"45,-",Infra,,
 1411337,Provisionamento e Operação de Infraestrutura,Optativa Específica,4,1411192,-,"-,-",Infra,,
-1411338,Reconhecimento de Padrões e Redes Neurais,Optativa Específica,4,"1411341, 1411187",-,"-,-",Inteligência,,
+1411338,Reconhecimento de Padrões e Redes Neurais,Optativa Específica,4,"1109049, 1411187",-,"-,-",Inteligência,,
 1411339,Recuperação da Informação e Busca na Web,Optativa Específica,4,-,-,"35,-",Inteligência,,
 1411340,Segurança de Sistemas,Optativa Específica,4,"1411192, 1411190",-,"-,-",Infra,,
 1411342,Sistemas de Apoio à Decisão,Optativa Específica,4,-,-,"46,-",Inteligência,,
