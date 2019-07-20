@@ -1,8 +1,8 @@
 <template>
   <div class="graph">
     <svg v-if="nodes.length != 0" :viewBox="`0 0 ${width} ${height}`">
-      <node v-for="node in nodes" :key="node.codigo" :node="node" />
       <Link v-for="edge in edges" :key="edge.index" :edge="edge" />
+      <node v-for="node in nodes" :key="node.codigo" :node="node" />
     </svg>
   </div>
 </template>
@@ -37,9 +37,9 @@ export default {
           })
         )
         .force('charge', d3.forceManyBody())
-        .force('center', d3.forceCenter(1000, 300))
-        .force('x', d3.forceX(this.width / 2).strength(0.1))
-        .force('y', d3.forceY(this.height / 2).strength(0.1))
+        .force('center', d3.forceCenter(this.width / 2, this.height / 2))
+        .force('x', d3.forceX(this.width / 2).strength(0.05))
+        .force('y', d3.forceY(this.height / 2).strength(0.05))
     }
   },
   mounted() {
@@ -62,6 +62,8 @@ export default {
       this.nodes = nodes.map(node => {
         return {
           ...node,
+          x: 0,
+          y: 0,
           codigo: parseInt(node.codigo)
         }
       })
@@ -77,6 +79,12 @@ export default {
         .nodes(this.nodes)
         .force('link')
         .links(this.edges)
+    },
+    ticked() {
+      this.nodes.forEach(node => {
+        node.x = Math.max(node.x, 0)
+        node.y = Math.max(node.x, 0)
+      })
     },
     async getSubjects() {
       await this.$axios

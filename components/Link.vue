@@ -1,14 +1,11 @@
 <template>
-  <g v-if="edge.source.x != undefined">
-    <path
-      id="link"
-      :d="
-        `M ${edge.source.x}, ${edge.source.y} L ${edge.target.x}, ${
-          edge.target.y
-        }`
-      "
-    />
-  </g>
+  <path
+    v-if="edge.source.x != undefined"
+    :d="path"
+    fill="orange"
+    stroke="black"
+    stroke-width="1"
+  />
 </template>
 
 <script>
@@ -17,6 +14,14 @@ export default {
   props: {
     edge: {
       type: Object
+    }
+  },
+  computed: {
+    path() {
+      const edge = this.edge
+      return `M ${edge.source.x} ${edge.source.y} L ${edge.target.x} ${
+        edge.target.y
+      }`
     }
   }
 }

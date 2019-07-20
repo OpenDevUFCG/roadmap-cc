@@ -1,5 +1,11 @@
 <template>
-  <circle r="3" fill="red"></circle>
+  <circle
+    v-if="node.x !== undefined"
+    r="3"
+    fill="red"
+    :cx="node.x"
+    :cy="node.y"
+  ></circle>
 </template>
 
 <script>
