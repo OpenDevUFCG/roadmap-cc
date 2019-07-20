@@ -1,40 +1,45 @@
 <template>
   <div class="graph">
-    <svg :width="width" :height="height" v-if="subjects.length != 0">
-      <nodes
-        v-for="subject in pack.children"
-        :subject="subject"
-        :color="color()"
-        :key="subject.data.codigo"
-      />
+    <svg v-if="nodes.length != 0" :viewBox="`0 0 ${width} ${height}`">
+      <node v-for="node in nodes" :key="node.codigo" :node="node" />
+      <Link v-for="edge in edges" :key="edge.index" :edge="edge" />
     </svg>
   </div>
 </template>
 
 <script>
 import * as d3 from 'd3'
-import Nodes from '@/components/Nodes.vue'
+import Node from '@/components/Node.vue'
+import Link from '@/components/Link.vue'
 
 export default {
   name: 'GraphicVisualization',
   components: {
-    Nodes
+    Node,
+    Link
   },
   data() {
     return {
       width: 0,
       height: 0,
-      subjects: []
+      nodes: [],
+      edges: []
     }
   },
   computed: {
-    pack() {
+    simulation() {
       return d3
-        .pack()
-        .size([this.width - 2, this.height - 2])
-        .padding(1)(
-        d3.hierarchy({ children: this.subjects }).sum(d => d.creditos)
-      )
+        .forceSimulation()
+        .force(
+          'link',
+          d3.forceLink().id(d => {
+            return d.codigo
+          })
+        )
+        .force('charge', d3.forceManyBody())
+        .force('center', d3.forceCenter(1000, 300))
+        .force('x', d3.forceX(this.width / 2).strength(0.1))
+        .force('y', d3.forceY(this.height / 2).strength(0.1))
     }
   },
   mounted() {
@@ -53,10 +58,33 @@ export default {
         d3.schemeCategory10
       )
     },
+    setNodes(nodes) {
+      this.nodes = nodes.map(node => {
+        return {
+          ...node,
+          codigo: parseInt(node.codigo)
+        }
+      })
+    },
+    setEdges(edges) {
+      this.edges = edges.map(edge => {
+        return {
+          source: parseInt(edge.cod_pre_requisito),
+          target: parseInt(edge.cod_disciplina)
+        }
+      })
+      this.simulation
+        .nodes(this.nodes)
+        .force('link')
+        .links(this.edges)
+    },
     async getSubjects() {
       await this.$axios
-        .get('https://laguinho.opendevufcg.org/v1/subjects')
-        .then(response => (this.subjects = response.data))
+        .get('https://laguinho.opendevufcg.org/v1/disciplinas')
+        .then(response => this.setNodes(response.data))
+      await this.$axios
+        .get('https://laguinho.opendevufcg.org/v1/disciplinas/relacionamentos')
+        .then(response => this.setEdges(response.data))
     }
   }
 }
