@@ -27,7 +27,7 @@ codigo,nome,categoria,creditos,pre_requisitos,periodo,quantidade_vagas,areas,dic
 1411192,Sistemas Operacionais,Obrigatório,4,"1411310, 1411182",5,"45, 70",,https://github.com/OpenDevUFCG/Tamburetei/tree/master/so,SO,TRUE,
 1411171,Teoria da Computação,Obrigatório,4,1411309,5,"80, 50",,https://github.com/OpenDevUFCG/Tamburetei/tree/master/tc,TC,TRUE,
 1305218,Metodologia Científica,Obrigatório,4,1114222,6,-50,,,METOLOGIA,TRUE,
-1411315,Programação Concorrente,Obrigatório,4,1411192,6,"35, 45",,,CONCORRENTE,TRUE,
+1411315,Programação Concorrente,Obrigatório,4,1411192,6,"35, 45",,,CONCORRENTE,TRUE,"É a mesma que fundamentos de programação concorrente? (2018.1)"
 1411316,Inteligência Artificial,Obrigatório,4,1411309,6,"48, 110",,,IA,TRUE,
 1411187,Análise e Técnicas de Algoritmos,Obrigatório,4,"1411305, 1411306",7,"60, 70",,,ATAL,TRUE,
 1411189,Compiladores,Obrigatório,4,1411309,7,"40, 80",,,,TRUE,
