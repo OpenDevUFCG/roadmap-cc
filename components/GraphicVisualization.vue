@@ -2,7 +2,12 @@
   <div class="graph">
     <svg v-if="nodes.length != 0" :viewBox="`0 0 ${width} ${height}`">
       <Link v-for="edge in edges" :key="edge.index" :edge="edge" />
-      <node v-for="node in nodes" :key="node.codigo" :node="node" />
+      <node
+        v-for="node in nodes"
+        :key="node.codigo"
+        :node="node"
+        :color="color(node.areas)"
+      />
     </svg>
   </div>
 </template>
@@ -38,8 +43,16 @@ export default {
         )
         .force('charge', d3.forceManyBody())
         .force('center', d3.forceCenter(this.width / 2, this.height / 2))
-        .force('x', d3.forceX(this.width / 2).strength(0.05))
-        .force('y', d3.forceY(this.height / 2).strength(0.05))
+        .force(
+          'x',
+          d3.forceX(this.width / 2).strength(this.getForceByLength(this.width))
+        )
+        .force(
+          'y',
+          d3
+            .forceY(this.height / 2)
+            .strength(this.getForceByLength(this.height))
+        )
     }
   },
   mounted() {
@@ -52,11 +65,11 @@ export default {
       this.width = this.$el.offsetWidth
       this.height = this.$el.offsetHeight
     },
+    getForceByLength(length) {
+      return 1 - length / (length + 80)
+    },
     color() {
-      return d3.scaleOrdinal(
-        this.subjects.map(d => d.categoria),
-        d3.schemeCategory10
-      )
+      return d3.scaleOrdinal(this.nodes.map(d => d.areas), d3.schemeCategory10)
     },
     setNodes(nodes) {
       this.nodes = nodes.map(node => {
