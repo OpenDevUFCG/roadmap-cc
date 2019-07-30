@@ -11,7 +11,6 @@ import * as d3 from 'd3';
 
 export default {
   name: 'GraphicVisualization',
-  components: {},
   data() {
     return {
       width: 0,
@@ -21,72 +20,8 @@ export default {
     };
   },
   computed: {
-    simulation() {
-      return d3
-        .forceSimulation()
-        .force('link', d3.forceLink().id(d => d.codigo))
-        .force('charge', d3.forceManyBody())
-        .force('center', d3.forceCenter(this.width / 2, this.height / 2))
-        .force(
-          'x',
-          d3.forceX(this.width / 2).strength(this.getForceByLength(this.width))
-        )
-        .force(
-          'y',
-          d3
-            .forceY(this.height / 2)
-            .strength(this.getForceByLength(this.height))
-        );
-    }
-  },
-  mounted() {
-    window.addEventListener('resize', this.onResize);
-    this.onResize();
-    this.fetchData();
-  },
-  methods: {
-    buildGraphic() {
-      const svg = d3.select('svg');
-      const g = svg.append('g').attr('class', 'everything');
-      const nodes = [...this.nodes];
-      const edges = [...this.edges];
-
-      const link = g
-        .append('g')
-        .attr('class', 'link')
-        .selectAll('line')
-        .data(edges)
-        .enter()
-        .append('line')
-        .attr('stroke', '#AAA');
-
-      const node = g
-        .append('g')
-        .attr('class', 'nodes')
-        .selectAll('circle')
-        .data(nodes)
-        .enter()
-        .append('circle')
-        .attr('r', d => 3)
-        .attr('fill', d => this.color()(d.areas))
-        .attr('stroke', 'grey')
-        .attr('stroke-width', 1)
-        .call(this.drag(this.simulation));
-
-      node
-        .append('title')
-        .attr('font-size', '20px')
-        .text(d => d.sigla);
-      this.simulation.nodes(nodes).on('tick', this.ticked(link, node));
-
-      this.simulation.force('link').links(edges);
-
-      //const zoom_handler = d3.zoom().on('zoom', this.zoom_actions(g));
-
-      //zoom_handler(svg);
-      return svg.nodes()
-    },
-    drag(simulation) {
+    drag() {
+      const { simulation } = this;
       function dragstarted(d) {
         if (!d3.event.active) simulation.alphaTarget(0.3).restart();
         d.fx = d.x;
@@ -109,6 +44,88 @@ export default {
         .on('end', dragended)
         .on('drag', dragged);
     },
+    group() {
+      return this.svg.append('g').attr('class', 'everything');
+    },
+    links() {
+      return this.group
+        .append('g')
+        .attr('class', 'link')
+        .selectAll('line')
+        .data(this.edges)
+        .enter()
+        .append('line')
+        .attr('stroke', '#AAA');
+    },
+    simulation() {
+      return d3
+        .forceSimulation(this.nodes)
+        .force('link', d3.forceLink().id(d => d.codigo).links(this.edges))
+        .force('charge', d3.forceManyBody())
+        .force('center', d3.forceCenter(this.width / 2, this.height / 2))
+        .force(
+          'x',
+          d3.forceX(this.width / 2).strength(this.getForceByLength(this.width))
+        )
+        .force(
+          'y',
+          d3
+            .forceY(this.height / 2)
+            .strength(this.getForceByLength(this.height))
+        );
+    },
+    svg() {
+      return d3.select('svg');
+    },
+    tick() {
+      return 
+    },
+    vertex() {
+      const vertex = this.group
+        .append('g')
+        .attr('class', 'nodes')
+        .selectAll('circle')
+        .data(this.nodes)
+        .enter()
+        .append('g')
+        .append('circle')
+        .attr('fill', d => this.color(d.areas))
+        .attr('stroke', 'grey')
+        .attr('stroke-width', 1)
+        .attr('r', 3)
+        .call(this.drag);
+      return vertex
+    }
+  },
+  mounted() {
+    window.addEventListener('resize', this.onResize);
+    this.onResize();
+    this.fetchData();
+  },
+  methods: {
+    buildGraphic() {
+      const { links, vertex, group } = this;
+      vertex.append('title')
+        .attr('font-size', '20px')
+        .text(d => d.sigla)
+        
+      this.simulation.on('tick', function(d){
+          //position links
+          links
+            .attr("x1", d => d.source.x)
+            .attr("x2", d => d.target.x)
+            .attr("y1", d => d.source.y)
+            .attr("y2", d => d.target.y)
+        
+          //position nodes
+          vertex
+            .attr("transform", d => `translate(${d.x} , ${d.y})`)
+        });
+
+      const zoom_handler = d3.zoom().on('zoom', () => group.attr('transform', d3.event.transform));
+
+      zoom_handler(this.svg);
+    },
     onResize() {
       this.width = this.$el.offsetWidth;
       this.height = this.$el.offsetHeight;
@@ -116,8 +133,8 @@ export default {
     getForceByLength(length) {
       return 1 - length / (length + 80);
     },
-    color() {
-      return d3.scaleOrdinal(d3.schemeSet3)
+    color(area) {
+      return d3.scaleOrdinal(d3.schemeSet3)(area)
     },
     setEdges(edges) {
       this.edges = edges.map(edge => ({
@@ -173,9 +190,7 @@ export default {
       );
       this.buildGraphic();
     },
-    zoom_actions(g) {
-      g.attr('transform', d3.event.transform);
-    }
+    
   }
 };
 </script>
