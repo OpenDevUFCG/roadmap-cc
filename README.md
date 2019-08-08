@@ -27,8 +27,8 @@ $ cd roadmap-cc
 # instalar dependências
 $ yarn install
 
-# servindo localmente com "hot reload" em localhost:3000
-$ yarn run dev
+# servindo localmente com "hot reload" em localhost:8080
+$ yarn run serve
 
 # construindo para produção e inicializando servidor
 $ yarn run build
@@ -38,7 +38,7 @@ $ yarn start
 $ yarn run generate
 ```
 
-Para explicação detalhada de como as coisas funcionam, verifique a [documentação do Nuxt.js].
+Para explicação detalhada de como as coisas funcionam, verifique a [documentação do Vue.js].
 
 ## Dados
 
@@ -60,7 +60,7 @@ Para visualizar as versões disponíveis, veja as [tags] do nosso repositório.
 
 Quer sugerir alguma mudança no mapa? Criar uma nova ordem de cadeiras? Abra uma [issue] e conversa com a gente!
 
-[documentação do Nuxt.js]: https://nuxtjs.org
+[documentação do vue.js]: https://vuejs.org/
 [wiki]: https://github.com/OpenDevUFCG/roadmap-cc/wiki/RoadMap-CC---Wiki
 [tags]: https://github.com/OpenDevUFCG/roadmap-cc/tags
 [SemVer]: https://semver.org/lang/pt-BR/
