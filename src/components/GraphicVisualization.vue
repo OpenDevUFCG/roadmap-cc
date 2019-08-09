@@ -8,6 +8,7 @@
 <script>
 /* eslint-disable */
 import * as d3 from 'd3';
+import medianQuantidadeVagas from '../utils/math.js'
 
 export default {
   name: 'GraphicVisualization',
@@ -63,6 +64,7 @@ export default {
         .force('link', d3.forceLink().id(d => d.codigo).links(this.edges))
         .force('charge', d3.forceManyBody())
         .force('center', d3.forceCenter(this.width / 2, this.height / 2))
+        .force('collision', d3.forceCollide().radius(d => medianQuantidadeVagas(d) + 1))
         .force(
           'x',
           d3.forceX(this.width / 2).strength(this.getForceByLength(this.width))
@@ -88,12 +90,19 @@ export default {
         .data(this.nodes)
         .enter()
         .append('g')
-        .append('circle')
+        .call(this.drag);
+      vertex.append('circle')
         .attr('fill', d => this.color(d.areas))
         .attr('stroke', 'grey')
         .attr('stroke-width', 1)
-        .attr('r', 3)
-        .call(this.drag);
+        .attr('r', d => medianQuantidadeVagas(d))
+        
+      vertex.append('text')
+        .attr('text-anchor', 'middle')
+        .attr('font-size', '8px')
+        .attr('x', d => medianQuantidadeVagas(d)*2 + 2)
+        .text(d => d.sigla)
+        
       return vertex
     }
   },
@@ -105,9 +114,6 @@ export default {
   methods: {
     buildGraphic() {
       const { links, vertex, group } = this;
-      vertex.append('title')
-        .attr('font-size', '20px')
-        .text(d => d.sigla)
         
       this.simulation.on('tick', function(d){
           //position links

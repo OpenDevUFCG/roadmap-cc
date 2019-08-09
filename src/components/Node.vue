@@ -1,7 +1,6 @@
 <template>
   <g
     v-if="node.x !== undefined"
-    :transform="`translate(${node.x} , ${node.y})`"
   >
     <circle :r="medianQuantidadeVagas" :fill="color(node.areas)"></circle>
     <text
