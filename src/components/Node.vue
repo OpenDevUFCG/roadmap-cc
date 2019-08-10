@@ -1,7 +1,6 @@
 <template>
   <g
     v-if="node.x !== undefined"
-    :transform="`translate(${node.x} , ${node.y})`"
   >
     <circle :r="medianQuantidadeVagas" :fill="color(node.areas)"></circle>
     <text
@@ -33,18 +32,7 @@ export default {
     },
   },
   computed: {
-    medianQuantidadeVagas() {
-      return (
-        this.median(
-          this.node.quantidade_vagas
-            .split(',')
-            .filter(element => element !== '-')
-            .map(element => parseInt(element, 10)),
-        )
-          * 0.07
-        + 3
-      );
-    },
+    
   },
   methods: {
     median(values) {
