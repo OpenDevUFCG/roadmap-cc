@@ -62,7 +62,7 @@ export default {
       return d3
         .forceSimulation(this.nodes)
         .force('link', d3.forceLink().id(d => d.codigo).links(this.edges))
-        .force('charge', d3.forceManyBody())
+        .force('charge', d3.forceManyBody().strength(-8))
         .force('center', d3.forceCenter(this.width / 2, this.height / 2))
         .force('collision', d3.forceCollide().radius(d => medianQuantidadeVagas(d) + 1))
         .force(
@@ -97,13 +97,20 @@ export default {
         .attr('stroke-width', 1)
         .attr('r', d => medianQuantidadeVagas(d))
         
-      vertex.append('text')
-        .attr('text-anchor', 'middle')
-        .attr('font-size', '8px')
-        .attr('x', d => medianQuantidadeVagas(d)*2 + 2)
-        .text(d => d.sigla)
-        
       return vertex
+    },
+    title() {
+      return this.group
+        .append('g')
+        .attr('class', 'title')
+        .selectAll('circle')
+        .data(this.nodes)
+        .enter()
+        .append('g')
+        .append('text')
+        .attr('font-size', '8px')
+        .attr('x', d => medianQuantidadeVagas(d) + 2)
+        .text(d => d.sigla).call(this.drag);
     }
   },
   mounted() {
@@ -113,7 +120,7 @@ export default {
   },
   methods: {
     buildGraphic() {
-      const { links, vertex, group } = this;
+      const { links, vertex, title, group } = this;
         
       this.simulation.on('tick', function(d){
           //position links
@@ -126,6 +133,8 @@ export default {
           //position nodes
           vertex
             .attr("transform", d => `translate(${d.x} , ${d.y})`)
+          title
+            .attr("transform", d => `translate(${d.x} , ${d.y})`)
         });
 
       const zoom_handler = d3.zoom().on('zoom', () => group.attr('transform', d3.event.transform));
@@ -137,7 +146,7 @@ export default {
       this.height = this.$el.offsetHeight;
     },
     getForceByLength(length) {
-      return 1 - length / (length + 80);
+      return 1 - length / (length + 20);
     },
     color(area) {
       return d3.scaleOrdinal(d3.schemeSet3)(area)

@@ -32,18 +32,7 @@ export default {
     },
   },
   computed: {
-    medianQuantidadeVagas() {
-      return (
-        this.median(
-          this.node.quantidade_vagas
-            .split(',')
-            .filter(element => element !== '-')
-            .map(element => parseInt(element, 10)),
-        )
-          * 0.07
-        + 3
-      );
-    },
+    
   },
   methods: {
     median(values) {
