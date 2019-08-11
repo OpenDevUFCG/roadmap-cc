@@ -32,7 +32,7 @@ export default {
     },
   },
   computed: {
-    
+
   },
   methods: {
     median(values) {

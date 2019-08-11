@@ -2,6 +2,7 @@
   <div class='graph'>
     <svg v-if='nodes.length != 0' :viewBox='`0 0 ${width} ${height}`'>
     </svg>
+    <tooltip :node="nodeActive" />
   </div>
 </template>
 
@@ -9,15 +10,20 @@
 /* eslint-disable */
 import * as d3 from 'd3';
 import medianQuantidadeVagas from '../utils/math.js'
+import Tooltip from './Tooltip.vue';
 
 export default {
   name: 'GraphicVisualization',
+  components: {
+    Tooltip,
+  },
   data() {
     return {
       width: 0,
       height: 0,
       nodes: [],
-      edges: []
+      edges: [],
+      nodeActive: null
     };
   },
   computed: {
@@ -64,7 +70,7 @@ export default {
         .force('link', d3.forceLink().id(d => d.codigo).links(this.edges))
         .force('charge', d3.forceManyBody().strength(-8))
         .force('center', d3.forceCenter(this.width / 2, this.height / 2))
-        .force('collision', d3.forceCollide().radius(d => medianQuantidadeVagas(d) + 1))
+        .force('collision', d3.forceCollide().radius(d => medianQuantidadeVagas(d) *1.3))
         .force(
           'x',
           d3.forceX(this.width / 2).strength(this.getForceByLength(this.width))
@@ -72,15 +78,12 @@ export default {
         .force(
           'y',
           d3
-            .forceY(this.height / 2)
+            .forceY(d => { return this.height / parseInt(d.periodo !== '-'? d.periodo: '0' )})
             .strength(this.getForceByLength(this.height))
         );
     },
     svg() {
       return d3.select('svg');
-    },
-    tick() {
-      return 
     },
     vertex() {
       const vertex = this.group
@@ -91,11 +94,17 @@ export default {
         .enter()
         .append('g')
         .call(this.drag);
+      const { tooltip } = this;
       vertex.append('circle')
         .attr('fill', d => this.color(d.areas))
         .attr('stroke', 'grey')
         .attr('stroke-width', 1)
         .attr('r', d => medianQuantidadeVagas(d))
+        .on('mouseover', d => {
+            this.nodeActive = d
+          })		
+        .on("mousemove", () => { return tooltip.style("top", (event.pageY)+"px").style("left",(event.pageX+10)+"px");})
+        .on("mouseout", () => this.nodeActive = null);
         
       return vertex
     },
@@ -209,9 +218,10 @@ export default {
   }
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .graph {
   width: 100vw;
   height: 100vh;
 }
+
 </style>
