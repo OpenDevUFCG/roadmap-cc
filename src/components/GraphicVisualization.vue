@@ -2,6 +2,7 @@
   <div class='graph'>
     <svg v-if='nodes.length != 0' :viewBox='`0 0 ${width} ${height}`'>
     </svg>
+    <tooltip :node="nodeActive" />
   </div>
 </template>
 
@@ -9,18 +10,26 @@
 /* eslint-disable */
 import * as d3 from 'd3';
 import medianQuantidadeVagas from '../utils/math.js'
+import Tooltip from './Tooltip.vue';
 
 export default {
   name: 'GraphicVisualization',
+  components: {
+    Tooltip,
+  },
   data() {
     return {
       width: 0,
       height: 0,
       nodes: [],
-      edges: []
+      edges: [],
+      nodeActive: null
     };
   },
   computed: {
+    areas() {
+      return [...new Set(this.nodes.map(e => e.areas))]
+    },
     drag() {
       const { simulation } = this;
       function dragstarted(d) {
@@ -63,41 +72,35 @@ export default {
         .forceSimulation(this.nodes)
         .force('link', d3.forceLink().id(d => d.codigo).links(this.edges))
         .force('charge', d3.forceManyBody().strength(-8))
-        .force('center', d3.forceCenter(this.width / 2, this.height / 2))
-        .force('collision', d3.forceCollide().radius(d => medianQuantidadeVagas(d) + 1))
+        .force('collision', d3.forceCollide().radius(d => medianQuantidadeVagas(d) *1.3))
         .force(
           'x',
-          d3.forceX(this.width / 2).strength(this.getForceByLength(this.width))
+          d3.forceX(d => this.scaleX(this.areas.indexOf(d.areas))).strength(0.3)
         )
         .force(
           'y',
           d3
-            .forceY(this.height / 2)
-            .strength(this.getForceByLength(this.height))
+            .forceY(d => this.scaleY(d.periodo !== '-'? d.periodo: '10' ))
+            .strength(0.3)
         );
+    },
+    scaleColor () {
+      return d3.scaleOrdinal()
+        .domain(this.areas)
+        .range(d3.schemePastel1)
+    },
+    scaleX () {
+      return d3.scaleLinear()
+        .domain([0, this.areas.length])
+        .range([this.width*0.2, this.width*0.8]);
+    },
+    scaleY () {
+      return d3.scaleLinear()
+        .domain([0, 10])
+        .range([this.height*0.2, this.height*0.8]);
     },
     svg() {
       return d3.select('svg');
-    },
-    tick() {
-      return 
-    },
-    vertex() {
-      const vertex = this.group
-        .append('g')
-        .attr('class', 'nodes')
-        .selectAll('circle')
-        .data(this.nodes)
-        .enter()
-        .append('g')
-        .call(this.drag);
-      vertex.append('circle')
-        .attr('fill', d => this.color(d.areas))
-        .attr('stroke', 'grey')
-        .attr('stroke-width', 1)
-        .attr('r', d => medianQuantidadeVagas(d))
-        
-      return vertex
     },
     title() {
       return this.group
@@ -111,7 +114,30 @@ export default {
         .attr('font-size', '8px')
         .attr('x', d => medianQuantidadeVagas(d) + 2)
         .text(d => d.sigla).call(this.drag);
-    }
+    },
+    vertex() {
+      const vertex = this.group
+        .append('g')
+        .attr('class', 'nodes')
+        .selectAll('circle')
+        .data(this.nodes)
+        .enter()
+        .append('g')
+        .call(this.drag);
+      const { tooltip } = this;
+      vertex.append('circle')
+        .attr('fill', d => this.scaleColor(d.areas))
+        .attr('stroke', 'grey')
+        .attr('stroke-width', 1)
+        .attr('r', d => medianQuantidadeVagas(d))
+        .on('mouseover', d => {
+            this.nodeActive = d
+          })		
+        .on("mousemove", () => tooltip.style("top", (event.pageY)+"px").style("left",(event.pageX+10)+"px"))
+        .on("mouseout", () => this.nodeActive = null);
+        
+      return vertex
+    },
   },
   mounted() {
     window.addEventListener('resize', this.onResize);
@@ -209,9 +235,10 @@ export default {
   }
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .graph {
   width: 100vw;
   height: 100vh;
 }
+
 </style>
