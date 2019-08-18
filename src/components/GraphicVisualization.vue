@@ -72,17 +72,25 @@ export default {
         .forceSimulation(this.nodes)
         .force('link', d3.forceLink().id(d => d.codigo).links(this.edges))
         .force('charge', d3.forceManyBody().strength(-8))
-        .force('collision', d3.forceCollide().radius(d => medianQuantidadeVagas(d) *1.3))
+        .force('collision', d3.forceCollide().radius(d => medianQuantidadeVagas(d) *2))
         .force(
           'x',
-          d3.forceX(d => this.scaleX(this.areas.indexOf(d.areas))).strength(0.3)
+          d3.forceX(d => {
+            if (d.areas === "") return this.width / 2
+            return this.scaleX(this.areas.indexOf(d.areas))
+          }
+            ).strength(d => {
+            if (d.areas === "") return 0.1
+            if (d.periodo === '1' || d.periodo === '-') return 1
+            return (parseInt(d.periodo) - 1) * -0.01
+          })
         )
         .force(
           'y',
           d3
             .forceY(d => this.scaleY(d.periodo !== '-'? d.periodo: '10' ))
             .strength(0.3)
-        );
+        )
     },
     scaleColor () {
       return d3.scaleOrdinal()
@@ -91,13 +99,13 @@ export default {
     },
     scaleX () {
       return d3.scaleLinear()
-        .domain([0, this.areas.length])
-        .range([this.width*0.2, this.width*0.8]);
+        .domain([0, this.areas.filter(e => e.areas !== "").length - 1])
+        .range([this.width*0.15, this.width*1]);
     },
     scaleY () {
       return d3.scaleLinear()
-        .domain([0, 10])
-        .range([this.height*0.2, this.height*0.8]);
+        .domain([1, 10])
+        .range([this.height*0.1, this.height*0.8]);
     },
     svg() {
       return d3.select('svg');
@@ -128,7 +136,8 @@ export default {
       vertex.append('circle')
         .attr('fill', d => this.scaleColor(d.areas))
         .attr('stroke', 'grey')
-        .attr('stroke-width', 1)
+        .attr('stroke-width', 1.5)
+        .attr('stroke-dasharray', d => d.categoria === "Obrigatório"? 0: 3)
         .attr('r', d => medianQuantidadeVagas(d))
         .on('mouseover', d => {
             this.nodeActive = d
@@ -162,10 +171,6 @@ export default {
           title
             .attr("transform", d => `translate(${d.x} , ${d.y})`)
         });
-
-      const zoom_handler = d3.zoom().on('zoom', () => group.attr('transform', d3.event.transform));
-
-      zoom_handler(this.svg);
     },
     onResize() {
       this.width = this.$el.offsetWidth;
