@@ -18,7 +18,7 @@ export default function medianQuantidadeVagas(node) {
         .filter(element => element !== '-')
         .map(element => parseInt(element, 10)),
     )
-    * 0.1
-    + 8
+    * 0.14
+    + 12
   );
 }
