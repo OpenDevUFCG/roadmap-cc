@@ -26,7 +26,7 @@ criando relações de dependência entre as cadeiras do curso e o estudante prec
 antecedência para analisar fatores como quantidade de vagas, frequência que é ofertada a cadeira e
 até mesmo dicas prévias de como funciona essa disciplina.
 
-Pensando nisso, o roadmap-CC atua como uma visualização que auxiliará o estudante a conhecer melhor
+Pensando nisso, o roadmap-CC atua como uma aplicação que auxiliará o estudante a conhecer melhor
 as disciplinas, suas dependências e as principais áreas de conhecimento que ele poderá trilhar em
 sua graduação.
 
