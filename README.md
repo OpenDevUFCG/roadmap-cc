@@ -76,20 +76,7 @@ Para explicação detalhada de como as coisas funcionam, verifique a [documenta�
 
 Tem interesse em saber como conseguimos esses dados? Acesse nossa [wiki]
 
-## Versionamento
-
-Cada versão nossa, tem o seguinte formato:  
-`MAJOR.MINOR.PATCH`  
-Por exemplo: `1.0.0`  
-Alteramos a versão Maior(MAJOR), quando fazemos mudanças incompatíveis na API existente,  
-Alteramos a versão Menor(MINOR), quando adicionamos funcionalidades mantendo compatibilidade com o que existe,   
-Alteramos a versão de Correção(PATCH), quando corrigimos falhas mantendo a compatibilidade.
-
-Nos baseamos no [SemVer], verifique o link para mais informações.  
-Para visualizar as versões disponíveis, veja as [tags] do nosso repositório.
-
 [documentação do vue.js]: https://vuejs.org/
 [wiki]: https://github.com/OpenDevUFCG/roadmap-cc/wiki/RoadMap-CC---Wiki
 [tags]: https://github.com/OpenDevUFCG/roadmap-cc/tags
-[SemVer]: https://semver.org/lang/pt-BR/
 [issue]: https://github.com/OpenDevUFCG/roadmap-cc/issues/new
