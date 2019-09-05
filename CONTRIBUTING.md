@@ -121,6 +121,19 @@ versão completa, estável e funcional.
 
 Pedimos que realizem as mensagens de commit em português.
 
+## Versionamento
+
+Cada versão nossa, tem o seguinte formato:  
+`MAJOR.MINOR.PATCH`  
+Por exemplo: `1.0.0`  
+Alteramos a versão Maior(MAJOR), quando fazemos mudanças incompatíveis na API existente,  
+Alteramos a versão Menor(MINOR), quando adicionamos funcionalidades mantendo compatibilidade com o que existe,   
+Alteramos a versão de Correção(PATCH), quando corrigimos falhas mantendo a compatibilidade.
+
+Nos baseamos no [SemVer], verifique o link para mais informações.  
+Para visualizar as versões disponíveis, veja as [tags] do nosso repositório.
+
+[tags]: https://github.com/OpenDevUFCG/roadmap-cc/tags
 [nova issue]: https://github.com/OpenDevUFCG/roadmap-cc/issues/new/choose
 [discord]: https://discordapp.com/invite/vFFGGEE
 [issue]: https://github.com/OpenDevUFCG/roadmap-cc/issues
@@ -132,3 +145,4 @@ Pedimos que realizem as mensagens de commit em português.
 [Como contribuir?]: #como-contribuir
 [contato]: #contato
 [issues que não estão sendo resolvidas]: https://github.com/OpenDevUFCG/roadmap-cc/issues?q=is%3Aopen+is%3Aissue+no%3Aassignee
+[SemVer]: https://semver.org/lang/pt-BR/
