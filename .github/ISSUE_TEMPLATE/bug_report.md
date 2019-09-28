@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Create a report to help us improve
+about: Criar um report para nos ajudar corrigir algo
 title: ''
 labels: ''
 assignees: ''
@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 **Descrição da falha**
-Uma descrição clara e concisa de qual é a falha.
+Uma descrição clara e concisa de qual é o problema.
 
 **Como reproduzir a falha**
 Passos para reproduzir o comportamento:
