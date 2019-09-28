@@ -5,7 +5,7 @@ Todas as mudanças notavéis desse projeto serão documentadas nesse arquivo.
 O formato é baseado no [Mantenha um Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e nós aderimos ao sistema de versionamento [SemVer](https://semver.org/lang/pt-BR/).
 
-## [Não publicado]
+## [1.1.0] - 2019-09-28
 - csv com relacionamento entre as disciplinas
 - site com grafo interativo com visualização da relação entre as disciplinas obrigatórias
 
