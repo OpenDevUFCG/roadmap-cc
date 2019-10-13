@@ -4,8 +4,8 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.com/OpenDevUFCG/roadmap-cc">
-        <img src="https://travis-ci.com/OpenDevUFCG/roadmap-cc.svg?branch=development"
+  <a href="https://app.netlify.com/sites/roadmap-cc/deploys">
+        <img src="https://api.netlify.com/api/v1/badges/3cbbf899-a7a9-4620-a60f-9c3b30b03757/deploy-status"
             alt="Build Status"></a>
   <a href="https://github.com/facebook/jest">
         <img src="https://img.shields.io/badge/tested_with-jest-99424f.svg"
