@@ -42,19 +42,19 @@ codigo,nome,categoria,creditos,pre_requisitos,periodo,quantidade_vagas,areas,dic
 1411323,Algoritmos Avançados III,Optativa Específica,4,"1411167, 1411180",-,"-,-",Dev,,AA3
 1411324,Algoritmos Avançados IV,Optativa Específica,4,"1411167, 1411180",-,"-,-",Dev,,AA4
 1411325,Arquitetura de Software,Optativa Específica,4,1411308,-,"-,-",Dev,,
-1411197,Avaliação de Desempenho de Sistemas Discretos,Optativa Específica,4,1114129,-,"40,45",,,
+1411197,Avaliação de Desempenho de Sistemas Discretos,Optativa Específica,4,1114129,-,"40,45",,,ADSD
 1411194,Banco de Dados II,Optativa Específica,4,1411193,-,"40, 45",Dev,,BD2
 1411200,Computação Gráfica,Optativa Específica,4,-,-,"-,-",,,CG
 1302123,Computação e Música,Optativa Específica,4,1411305,-,"-,-",Geral,,
 1411326,Desenvolvimento de Aplicações Corporativas Avançadas,Optativa Específica,4,"1411308, 1411305",-,"-, 45",Dev,,DACA
 1411327,Desenvolvimento de Software Integrado à Infraestrutura,Optativa Específica,4,1411308,-,"-,-",Infra,,
-1411328,Economia de Tecnologia da Informação,Optativa Específica,4,1114129,-,"45, 39",Geral,,
+1411328,Economia de Tecnologia da Informação,Optativa Específica,4,1114129,-,"45, 39",Geral,,ETI
 1411329,Empreendedorismo em Software,Optativa Específica,4,-,-,"21, 25",Geral,,EmpSoft
-1411330,Gerência de Redes,Optativa Específica,4,1411190,-,"-, 40",Infra,,
+1411330,Gerência de Redes,Optativa Específica,4,1411190,-,"-, 40",Infra,,GR
 1411331,Interconexão de Redes de Computadores,Optativa Específica,4,1411190,-,"40, 41",Infra,,IRC
 1411209,Interface Homem- Máquina,Optativa Específica,4,-,-,"-, -",,,
 1411213,Otimização,Optativa Específica,4,-,-,"-, -",,,
-1411188,Métodos e Software Numéricos,Optativa Específica,4,-,-,"45, 45",,,
+1411188,Métodos e Software Numéricos,Optativa Específica,4,-,-,"45, 45",,,MSN
 1411332,Métodos Formais,Optativa Específica,4,-,-,"-,-",Geral,,
 1411333,Prática de Ensino em Computação I,Optativa Específica,2,-,-,"40, 40",Geral,,DIDA1
 1411334,Prática de Ensino em Computação II,Optativa Específica,2,1411333,-,"40, 40",Geral,,DIDA2
@@ -65,14 +65,14 @@ codigo,nome,categoria,creditos,pre_requisitos,periodo,quantidade_vagas,areas,dic
 1411338,Reconhecimento de Padrões e Redes Neurais,Optativa Específica,4,"1109049, 1411187",-,"-,-",Inteligência,,
 1411339,Recuperação da Informação e Busca na Web,Optativa Específica,4,"1411193, 1411312",-,"-, 35",Inteligência,,
 1411340,Segurança de Sistemas,Optativa Específica,4,"1411192, 1411190",-,"-,-",Infra,,
-1411342,Sistemas de Apoio à Decisão,Optativa Específica,4,1411193,-,"-, 46",Inteligência,,
+1411342,Sistemas de Apoio à Decisão,Optativa Específica,4,1411193,-,"-, 46",Inteligência,,SAD
 1411221,Sistemas de Informação Geográfica,Optativa Específica,4,-,-,"-,-",Dev,,
 1411222,Sistemas Distribuídos,Optativa Específica,4,"1411190, 1411192",-,"-,-",Infra,,SD
-1411343,TECC(Verificação e Validação de Software),Optativa Específica,4,1411314,-,"-, 40",Dev,,
+1411343,TECC(Verificação e Validação de Software),Optativa Específica,4,1411314,-,"-, 40",Dev,,WS
 1411349,TECC(PROJETO DE SISTEMAS OPERACIONAIS),Optativa Específica,4,"1411310,  1411182",-,"45,33",Infra,,LABSO
-1411350,TECC(GESTAO DE PROJETOS),Optativa Específica,4,1411314,-,"-, 25",Dev,,
+1411350,TECC(GESTAO DE PROJETOS),Optativa Específica,4,1411314,-,"-, 25",Dev,,LES
 1411351,TECC(CIENCIA DE DADOS DESCRITIVA),Optativa Específica,4,1114129,-,"-, 35",Inteligência,,CDD
-1411290,TECC(JOGOS DIGITAIS),Optativa Específica,4,-,-,"40, 40",Dev,,
+1411290,TECC(JOGOS DIGITAIS),Optativa Específica,4,-,-,"40, 40",Dev,,JoDi
 1411302,TECC(PROGRAMACAO FUNCIONAL),Optativa Específica,4,1411309,-,"45, 45",Dev,,PF
 1411356,TECC(CIÊNCIA DE DADOS PREDITIVA),Optativa Específica,4,1114222,-,"-, 35",Inteligência,,CDP
 1411355,TECC(VISUALIZAÇÃO DE DADOS),Optativa Específica,4,1114129,-,"-, 35",Inteligência,https://github.com/OpenDevUFCG/Tamburetei/tree/master/visu,VISU
@@ -81,8 +81,8 @@ codigo,nome,categoria,creditos,pre_requisitos,periodo,quantidade_vagas,areas,dic
 1301123,Administração e Empreendedorismo,Optativa Geral,4,-,-,"-, 50",,,
 1109035,Álgebra Vetorial e Geometria Analítica,Optativa Geral,4,-,-,"-, 5",,,
 1109128,Cálculo Diferencial e Integral III,Optativa Geral,4,"1109053, 1411312",-,"-,-",,,
-1305219,Direito e Cidadania,Optativa Geral,4,-,-,"60, 60",Geral,,
-1303021,Economia,Optativa Geral,4,-,-,"36, 35",,https://github.com/OpenDevUFCG/Tamburetei/tree/master/economia,
+1305219,Direito e Cidadania,Optativa Geral,4,-,-,"60, 60",Geral,,Direito
+1303021,Economia,Optativa Geral,4,-,-,"36, 35",,https://github.com/OpenDevUFCG/Tamburetei/tree/master/economia,Economia
 1108030,Física Geral I,Optativa Geral,4,-,-,"-,-",,,FIS1
 1108081,Física Geral II,Optativa Geral,4,"1108030, 1109103, 1411312",-,"-,-",,,FIS2
 1108100,Física Geral III,Optativa Geral,4,"1108081, 1109053",-,"-,-",,,FIS3
