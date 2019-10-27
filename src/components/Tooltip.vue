@@ -2,9 +2,10 @@
   <div
     v-if="isActive"
     :class="classObj"
-    :style="{ top: node.y + 'px', left: node.x + 3 + 'px'}"
+    :style="{ top: node.y + 'px', left: node.x + 50 + 'px'}"
   >
     <p>{{ node.nome | addSigla(node.sigla) }}</p>
+    <p>Clique novamente para expandir</p>
     <p v-if="node.areas !== ''">Trilha: {{ node.areas }}</p>
   </div>
 </template>

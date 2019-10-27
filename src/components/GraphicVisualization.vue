@@ -142,10 +142,27 @@ export default {
         .attr('stroke-width', 1.5)
         .attr('stroke-dasharray', d => d.categoria === "Obrigatório"? 0: 3)
         .attr('r', d => this.getSizeNode(d))
-        .on('mouseover', d => {
-            this.nodeActive = d
+        .on('click', d => {
+            if(this.nodeActive === d){
+              this.$router.push({ name: 'details', params: d });
+            }
+            this.nodeActive = d;
+            vertex.selectAll('circle')
+              .style("opacity", e => e === d ? 1 : 0.2);
+            d3.selectAll('text')
+              .style("opacity", e => 0.2);
+            d3.selectAll('line')
+              .style("opacity", e => 0.2);
           })		
-        .on("mouseout", () => this.nodeActive = null);
+        .on('mouseout', (e) => { 
+            this.nodeActive = null;
+            vertex.selectAll('circle')
+              .style("opacity", 1);
+            d3.selectAll('line')
+              .style("opacity", e => 1);
+            d3.selectAll('text')
+              .style("opacity", e => 1);
+          });
         
       return vertex
     },
@@ -200,8 +217,8 @@ export default {
     setNodes(nodes) {
       this.nodes = nodes.map(node => ({
         ...node,
-        x: 0,
-        y: 0,
+        x: this.width / 2,
+        y: this.height / 2,
         codigo: parseInt(node.codigo, 10)
       }));
     },

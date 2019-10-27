@@ -13,11 +13,13 @@
     "d3": "^5.9.7",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.2.0",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.9.0",
     "@vue/cli-plugin-eslint": "^3.9.0",
+    "@vue/cli-plugin-router": "^4.0.5",
     "@vue/cli-plugin-unit-mocha": "^3.9.0",
     "@vue/cli-service": "^3.9.0",
     "@vue/eslint-config-airbnb": "^4.0.0",
