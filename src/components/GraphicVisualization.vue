@@ -27,6 +27,10 @@ export default {
     };
   },
   computed: {
+    alphaSize() {
+      const { width, height } = this;
+      return Math.max(width, height) * 0.0005;
+    },
     areas() {
       return [...new Set(this.nodes.map(e => e.areas))]
     },
@@ -72,7 +76,7 @@ export default {
         .forceSimulation(this.nodes)
         .force('link', d3.forceLink().id(d => d.codigo).links(this.edges))
         .force('charge', d3.forceManyBody().strength(-8))
-        .force('collision', d3.forceCollide().radius(d => medianQuantidadeVagas(d) *2))
+        .force('collision', d3.forceCollide().radius(d => this.getSizeNode(d) *2))
         .force(
           'x',
           d3.forceX(d => {
@@ -130,19 +134,17 @@ export default {
         .selectAll('circle')
         .data(this.nodes)
         .enter()
-        .append('g')
-        .call(this.drag);
+        .append('g');
       const { tooltip } = this;
       vertex.append('circle')
         .attr('fill', d => this.scaleColor(d.areas))
         .attr('stroke', 'grey')
         .attr('stroke-width', 1.5)
         .attr('stroke-dasharray', d => d.categoria === "Obrigatório"? 0: 3)
-        .attr('r', d => medianQuantidadeVagas(d))
+        .attr('r', d => this.getSizeNode(d))
         .on('mouseover', d => {
             this.nodeActive = d
           })		
-        .on("mousemove", () => tooltip.style("top", (event.pageY)+"px").style("left",(event.pageX+10)+"px"))
         .on("mouseout", () => this.nodeActive = null);
         
       return vertex
@@ -171,6 +173,9 @@ export default {
           title
             .attr("transform", d => `translate(${d.x} , ${d.y})`)
         });
+    },
+    getSizeNode(node) {
+      return medianQuantidadeVagas(node) * this.alphaSize
     },
     onResize() {
       this.width = this.$el.offsetWidth;
