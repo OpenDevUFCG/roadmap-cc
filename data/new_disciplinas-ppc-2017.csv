@@ -1,4 +1,4 @@
-codigo,nome,categoria,creditos,pre_requisitos,periodo,quantidade_vagas,dev,infra,inteligencia,dicas,sigla
+codigo,nome,categoria,creditos,pre_requisitos,periodo,quantidade_vagas,dev,infra,matematica,dicas,sigla
 1411319,Atividades Complementares Flexíveis,Complementar,22,-,-,"-,-",0,0,0,,
 1411311,Fundamentos de Matemática para Ciência da Computação I,Obrigatório,4,-,1,"120, 130",0,0,5,https://github.com/OpenDevUFCG/Tamburetei/tree/master/fmcc1,FMCC1
 1411167,Programação I,Obrigatório,4,-,1,"110, 120",5,0,0,https://github.com/OpenDevUFCG/Tamburetei/tree/master/prog1,P1
