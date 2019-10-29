@@ -48,13 +48,13 @@ codigo,nome,categoria,creditos,pre_requisitos,periodo,quantidade_vagas,dev,infra
 1302123,Computação e Música,Optativa Específica,4,1411305,-,"-,-",0,0,0,,
 1411326,Desenvolvimento de Aplicações Corporativas Avançadas,Optativa Específica,4,"1411308, 1411305",-,"-, 45",5,0,0,,DACA
 1411327,Desenvolvimento de Software Integrado à Infraestrutura,Optativa Específica,4,1411308,-,"-,-",0,5,0,,
-1411328,Economia de Tecnologia da Informação,Optativa Específica,4,1114129,-,"45, 39",0,0,0,,
+1411328,Economia de Tecnologia da Informação,Optativa Específica,4,1114129,-,"45, 39",0,0,0,,ETI
 1411329,Empreendedorismo em Software,Optativa Específica,4,-,-,"21, 25",0,0,0,,EmpSoft
 1411330,Gerência de Redes,Optativa Específica,4,1411190,-,"-, 40",0,5,0,,
 1411331,Interconexão de Redes de Computadores,Optativa Específica,4,1411190,-,"40, 41",0,5,0,,IRC
 1411209,Interface Homem- Máquina,Optativa Específica,4,-,-,"-, -",0,0,0,,
 1411213,Otimização,Optativa Específica,4,-,-,"-, -",0,0,0,,
-1411188,Métodos e Software Numéricos,Optativa Específica,4,-,-,"45, 45",0,0,0,,
+1411188,Métodos e Software Numéricos,Optativa Específica,4,-,-,"45, 45",0,0,0,,MSN
 1411332,Métodos Formais,Optativa Específica,4,-,-,"-,-",0,0,0,,
 1411333,Prática de Ensino em Computação I,Optativa Específica,2,-,-,"40, 40",0,0,0,,DIDA1
 1411334,Prática de Ensino em Computação II,Optativa Específica,2,1411333,-,"40, 40",0,0,0,,DIDA2
