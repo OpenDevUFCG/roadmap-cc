@@ -1,0 +1,17 @@
+.DS_Store
+.bin
+.cache
+.git
+.gitignore
+
+tmp/
+log/
+logs/
+test/
+tests/
+config/
+
+**/*.log
+**/*.logs
+
+node_modules/
