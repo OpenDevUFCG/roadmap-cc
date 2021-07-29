@@ -17,7 +17,7 @@
   
 Roadmap para se tornar uma cientista da computação na UFCG.
 
-## Motivação
+## Motivação.
 
 Durante a graduação, o estudante de computação entrará em contato com diversas áreas de estudo com
 diversas frentes de atuação. As disciplinas obrigatórias introduzem essas frentes com conceitos
