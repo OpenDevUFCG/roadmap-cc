@@ -1,10 +1,12 @@
 :root {
     --bg-navbar: #FAFAFA;
+    --bg-sidebar: #F9FFFB;
     --navbar-links: #0E4749; 
     --title-color: #292D34;
     --subtitle-color: #7C828D;
     --address-color: #A89F9F;
     --bg-button: #E55812;
+    --category-text: #505050;
 }
 
 * {
@@ -17,10 +19,19 @@
 
 html {
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
     text-decoration: none ;  
+}
+
+.container {
+  margin-right: auto; 
+  margin-left:  auto; 
+  padding-right: 10px; /* 3 */
+  padding-left:  10px; /* 3 */
+
 }
 
 .hvr-underline-from-left {

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import './styles.css'
 import Navbar from '../Navbar/index'
-
 
 class Home extends Component {
     render() { 
@@ -16,6 +14,7 @@ class Home extends Component {
                 <p> PHASELLUS LECTUS <br/> PURUS, CONGUE.</p>
                 </div>
             </section>
+
             </>
         );
     }

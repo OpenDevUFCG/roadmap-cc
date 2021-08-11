@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import './styles.css'
-import logo from '../../assets/logo.svg'
-import openDevLogo from '../../assets/logo-opendev.svg'
+import logo from '../../assets/logo/logo-roadmap.svg'
+import openDevLogo from '../../assets/logo/logo-opendev.svg'
 
 
 
@@ -15,7 +14,7 @@ class Navbar extends Component {
                     </div>
                     <div className="navbar__box__links">
                     <li className="navbar__item hvr-underline-from-left"><a href="#">Sobre</a></li>
-                    <li className="navbar__item hvr-underline-from-left"><a href="#">Trilhas</a></li>
+                    <li className="navbar__item hvr-underline-from-left"><a href="#sidebar">Trilhas</a></li>
                     <li className="navbar__item hvr-underline-from-left"><a href="#">Contato</a></li>
                     <li className="navbar__item"><img src={ openDevLogo } alt="" id="openDevLogo" /></li>
                     </div>
