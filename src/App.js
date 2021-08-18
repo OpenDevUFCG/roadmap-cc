@@ -1,10 +1,16 @@
 import React from 'react';
-import './_global.css'
-import Home from './Components/Home/index'
+import './Styles/Styles.css'
+import Home from './Components/Home'
+import About from './Components/About'
+import Trails from './Components/Trails'
 
 function App() {
   return ( 
-    <Home></Home>
+    <>
+    <Home/>
+    <About/> 
+    <Trails/> 
+    </>
   );
 }
 
