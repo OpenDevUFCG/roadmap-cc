@@ -1,2 +1,2 @@
-import About from './index.jsx';
-export default About;
+import AboutUs from './AboutUs';
+export default AboutUs;

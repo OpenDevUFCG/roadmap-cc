@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Navbar from '../Navbar/index'
+import Navbar from '../Navbar/index';
+
 
 class Home extends Component {
     render() { 
@@ -14,10 +15,11 @@ class Home extends Component {
                 <p> PHASELLUS LECTUS <br/> PURUS, CONGUE.</p>
                 </div>
             </section>
-
             </>
         );
     }
 }
  
 export default Home;
+
+ 
