@@ -1,15 +1,16 @@
 import React from 'react';
 import './Styles/Styles.css'
 import Home from './Components/Home'
-import About from './Components/About'
-import Trails from './Components/Trails'
+import AboutUs from './Components/About'
+import Trilhas from './Components/Trilhas/Trilhas-home'
+
 
 function App() {
   return ( 
     <>
     <Home/>
-    <About/> 
-    <Trails/> 
+    <AboutUs/> 
+    <Trilhas/> 
     </>
   );
 }
