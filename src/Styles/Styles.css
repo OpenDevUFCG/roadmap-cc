@@ -181,53 +181,35 @@ a {
 }
 
 #trails {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../assets/img/trilhas.bg.svg");
-  background-repeat: no-repeat;
-  background-position-y: 90px;
-  background-position-x: 50%;
 }
 
 .trails__title {
-  padding-top: 8%;
+  padding-top: 10%;
   font-size: 40px;
 }
 
+.trails__subtitle {
+  padding-top: 20px;
+}
+
 .trails__card__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin-top: 5%;
 }
 
 .trails__card {
-  width: 280px;
-  height: 144px;
-  background-color: #ffff;
-  filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.3));
-  display: flex;
-  border-radius: 24px;
-  margin: 20px;
-}
-
-.card__text__wrapper {
-  width: 100%;
+  width: 250px;
+  height: 250px;
+  background-color: #e2daeb;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-
-.card__text__wrapper p {
-  text-align: center;
-  font-size: 13px;
-}
-
-.card__text__wrapper h3 {
-  font-weight: normal;
+  justify-content: center;
+  border-radius: 10px;
 }
 
 #icon__card {
@@ -329,8 +311,9 @@ a {
 }
 
 #border__color {
-  width: 7%;
-  height: 144px;
+  background-color: red;
+  width: 5%;
+  height: 130px;
 }
 
 .text__wrapper {
