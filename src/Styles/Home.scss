@@ -1,7 +1,7 @@
 .home {
     width: 100%;
-    height: 100vh;
-    margin-top: 8%;
+    height: 90vh;
+    margin-top: 13%;
     margin-left: 8%;
 }
 
@@ -9,13 +9,13 @@
     font-weight: bold;
     font-size: 50px;
     line-height: 80px;
-    color: var(--title-color);
+    color: $title-color;
 }
 
 #home__subtitle {
     padding-top: 10px;
     line-height: 30px;  
-    color: var(--subtitle-color);
+    color: $subtitle-color;
     font-size: 20px;
 }
 
@@ -27,7 +27,7 @@
 
 .home__button__wrapper p {
     padding-left: 40px;
-    color: var(--address-color);
+    color: $address-color;
     font-weight: bold;
     font-size: 15px;
     line-height: 30px;
@@ -35,13 +35,9 @@
 }
 
 #home__button {
+    @include button;
     width: 270px;
     height: 70px;
-    background-color: var(--bg-button);
-    border: none;
-    border-radius: 4px;
-
     font-size: 25px;
-    color: white;
-    font-weight: bold;
+    
 }

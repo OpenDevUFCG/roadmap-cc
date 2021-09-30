@@ -1,0 +1,50 @@
+.trail {
+ width: 100%;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+
+}
+
+
+.trail__title {
+   padding-top: 10%;
+}
+
+.trail__description {
+    padding-top: 2%;
+    text-align: left;
+    line-height: 30px;
+    
+}
+
+.trails__infos__wrapper {
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    align-items: flex-end;
+}
+
+#graph {
+    width: 70%;
+}
+
+#icon {
+    position: absolute;
+    top: 20%;
+    left: 21%;
+}
+
+.trails__infos__wrapper div{
+    margin-left: 15%;
+}
+
+.trails__infos__wrapper button {
+    @include button;
+    width: 130px;
+    height: 60px;
+    margin-bottom: 30px;
+    background-color: $navbar-links;
+}

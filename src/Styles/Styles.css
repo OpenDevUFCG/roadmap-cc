@@ -1,0 +1,354 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  /* 3 */
+  padding-left: 10px;
+  /* 3 */
+}
+
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 22px;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #0E4749;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+.home {
+  width: 100%;
+  height: 90vh;
+  margin-top: 13%;
+  margin-left: 8%;
+}
+
+#home__title {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 80px;
+  color: #292D34;
+}
+
+#home__subtitle {
+  padding-top: 10px;
+  line-height: 30px;
+  color: #7C828D;
+  font-size: 20px;
+}
+
+.home__button__wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.home__button__wrapper p {
+  padding-left: 40px;
+  color: #A89F9F;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+#home__button {
+  background-color: #E55812;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  width: 270px;
+  height: 70px;
+  font-size: 25px;
+}
+
+.navbar {
+  width: 100%;
+  height: 85px;
+  background-color: #FAFAFA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 0;
+  transition: top 0.3s;
+}
+
+.navbar__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 80px;
+  padding-right: 60px;
+}
+
+.navbar__box {
+  display: flex;
+  margin-top: 15px;
+  padding-left: 3%;
+  width: 100%;
+}
+
+.navbar__box__links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  align-items: center;
+}
+
+.navbar__item a {
+  color: #0E4749;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+#logo {
+  width: 45%;
+}
+
+#openDevLogo {
+  width: 40px;
+}
+
+#about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../assets/img/undraw_Through_the_desert_re_1q2x.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 50%;
+  background-size: 40%;
+}
+
+#logo__roadmap {
+  margin-top: 25%;
+  width: 250px;
+}
+
+.title__about {
+  font-size: 40px;
+  font-weight: 500;
+  padding-top: 10%;
+  color: #0E4749;
+}
+
+.text__about {
+  padding-top: 40px;
+  padding-right: 20%;
+  width: 50%;
+}
+
+#trails {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../assets/img/trilhas.bg.svg");
+  background-repeat: no-repeat;
+  background-position-y: 90px;
+  background-position-x: 50%;
+}
+
+.trails__title {
+  padding-top: 8%;
+  font-size: 40px;
+}
+
+.trails__card__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.trails__card {
+  width: 280px;
+  height: 144px;
+  background-color: #ffff;
+  filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.3));
+  display: flex;
+  border-radius: 24px;
+  margin: 20px;
+}
+
+.card__text__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__text__wrapper p {
+  text-align: center;
+  font-size: 13px;
+}
+
+.card__text__wrapper h3 {
+  font-weight: normal;
+}
+
+#icon__card {
+  width: 30%;
+}
+
+.trails__card button {
+  background-color: #E55812;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  width: 100px;
+  height: 40px;
+}
+
+.trail {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.trail__title {
+  padding-top: 10%;
+}
+
+.trail__description {
+  padding-top: 2%;
+  text-align: left;
+  line-height: 30px;
+}
+
+.trails__infos__wrapper {
+  width: 100%;
+  margin-top: 5%;
+  display: flex;
+  align-items: flex-end;
+}
+
+#graph {
+  width: 70%;
+}
+
+#icon {
+  position: absolute;
+  top: 20%;
+  left: 21%;
+}
+
+.trails__infos__wrapper div {
+  margin-left: 15%;
+}
+
+.trails__infos__wrapper button {
+  background-color: #E55812;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  width: 130px;
+  height: 60px;
+  margin-bottom: 30px;
+  background-color: #0E4749;
+}
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../assets/img/notFound__bg.svg");
+  background-repeat: no-repeat;
+  background-position-y: 80%;
+}
+
+.notFound img {
+  width: 30%;
+}
+
+.notFound p {
+  padding-top: 2%;
+  font-size: 30px;
+  color: #0E4749;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper {
+  width: 290px;
+  height: 130px;
+  background-color: #e2daeb;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  display: flex;
+}
+
+#border__color {
+  width: 7%;
+  height: 144px;
+}
+
+.text__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-top: 5%;
+}
+
+#title {
+  font-weight: 400;
+}
+
+#description {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=Styles.css.map */

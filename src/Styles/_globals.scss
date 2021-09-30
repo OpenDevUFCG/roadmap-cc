@@ -1,11 +1,13 @@
-:root {
-    --bg-navbar: #FAFAFA;
-    --navbar-links: #0E4749; 
-    --title-color: #292D34;
-    --subtitle-color: #7C828D;
-    --address-color: #A89F9F;
-    --bg-button: #E55812;
-}
+    $bg-navbar: #FAFAFA;
+    $bg-sidebar: #F9FFFB;
+    $navbar-links: #0E4749; 
+    $title-color: #292D34;
+    $subtitle-color: #7C828D;
+    $address-color: #A89F9F;
+    $bg-button: #E55812;
+    $category-text: #505050;
+    $bg-cards: #e2daeb;
+
 
 * {
     padding: 0;
@@ -17,10 +19,27 @@
 
 html {
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;  
 }
 
 a {
     text-decoration: none ;  
+}
+
+.container {
+  margin-right: auto; 
+  margin-left:  auto; 
+  padding-right: 10px; /* 3 */
+  padding-left:  10px; /* 3 */
+
+}
+
+@mixin button {
+    background-color: $bg-button;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
 }
 
 .hvr-underline-from-left {
@@ -36,7 +55,7 @@ a {
     content: "";
     position: absolute;
     z-index: -1;
-    top: 17px;
+    top: 22px;
     left: 0;
     right: 100%;
     bottom: 0;

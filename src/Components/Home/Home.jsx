@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import './styles.css'
-import Navbar from '../Navbar/index'
+import Navbar from '../Navbar/index';
 
 
 class Home extends Component {
@@ -22,3 +21,5 @@ class Home extends Component {
 }
  
 export default Home;
+
+ 

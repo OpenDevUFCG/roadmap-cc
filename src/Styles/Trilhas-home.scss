@@ -1,0 +1,60 @@
+#trails {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../assets/img/trilhas.bg.svg');
+    background-repeat: no-repeat;
+    background-position-y: 90px;
+    background-position-x: 50%;
+}
+
+.trails__title{
+    padding-top: 8%;
+    font-size: 40px;
+
+}
+
+.trails__card__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.trails__card {
+    width: 280px;
+    height: 144px;
+    background-color: #ffff;
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.3));
+    display: flex;
+    border-radius: 24px;
+    margin: 20px;  
+}
+
+.card__text__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__text__wrapper p {
+    text-align: center;
+    font-size: 13px;
+}
+
+.card__text__wrapper h3{
+    font-weight: normal;
+}
+
+#icon__card {
+    width: 30%;
+}
+
+.trails__card button{
+    @include button;
+    width: 100px;
+    height: 40px;
+}
