@@ -6,8 +6,7 @@ class About extends Component {
         super(props)
         this.state = {
             title: this.props.title, 
-            text:  this.props.text, 
-        
+            text:  this.props.text,      
         }
     }
     render() { 
@@ -22,5 +21,5 @@ class About extends Component {
         );
     }
 }
- 
+
 export default About;
