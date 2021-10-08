@@ -1,8 +1,26 @@
 .home {
     width: 100%;
     height: 90vh;
-    margin-top: 13%;
     margin-left: 8%;
+    overflow-y: hidden;
+}
+
+.home_container{
+    width: 40%;
+    margin-top: 13%;
+    float: left;
+}
+
+.grafo_container{
+    width: 55%;
+    margin-bottom: 90px;
+    margin-top: 15px;
+    padding: 0;
+    float:right;
+    
+}
+#grafo{
+    z-index: -1;
 }
 
 #home__title {

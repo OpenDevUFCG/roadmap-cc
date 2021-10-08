@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from '../Navbar'
 import data from '../Pt-Br'
+import {Vega} from 'react-vega'
+import myData from './vis-home.json'
 
 
 class Home extends React.Component {
@@ -23,12 +25,21 @@ class Home extends React.Component {
                 navLink3={data.navLink3}
             />
             <section className="home">
-                <h1 id="home__title">{this.props.title}</h1>
-                <p id="home__subtitle">{this.props.subtitle}</p>
-                <div className="home__button__wrapper">
-                <button id="home__button">{this.props.btnText}</button>
-                <p>{this.props.miniText}</p>
+
+                <div className="home_container">
+                    <h1 id="home__title">{this.props.title}</h1>
+                    <p id="home__subtitle">{this.props.subtitle}</p>
+                    <div className="home__button__wrapper">
+                        <button id="home__button">{this.props.btnText}</button>
+                        <p>{this.props.miniText}</p>
+                    </div>
                 </div>
+
+                <div className="grafo_container">
+                    <Vega spec={myData} id="grafo"/>  
+                </div>
+                        
+
             </section>
            
         </>
