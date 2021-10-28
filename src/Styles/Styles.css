@@ -101,7 +101,6 @@ a {
   width: 100%;
   height: 85px;
   background-color: #fafafa;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: fixed;
   top: 0;
   transition: top 0.3s;
@@ -124,7 +123,7 @@ a {
   padding-left: 3%;
   width: 100%; }
   .navbar__box img {
-    width: 45%; }
+    width: 7%; }
 
 .navbar__box__links {
   display: flex;
@@ -147,7 +146,7 @@ a {
   #about h2 {
     font-size: 40px;
     font-weight: 500;
-    padding-top: 10%;
+    padding-top: 6%;
     text-align: center;
     color: #0e4749; }
   #about p {
@@ -172,15 +171,15 @@ a {
   background-position-y: 90px;
   background-position-x: 50%; }
   #trails h2 {
-    padding-top: 8%;
+    padding-top: 6%;
     font-size: 40px;
-    font-weight: normal;
-    margin-bottom: 2%; }
+    font-weight: normal; }
 
 .trails__card__wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: space-around;
+  width: 65vw; }
 
 .notFound {
   display: flex;
@@ -201,16 +200,16 @@ a {
     text-align: center; }
 
 .trails__card {
-  width: 280px;
-  height: 144px;
+  width: 320px;
+  height: 130px;
   background-color: #ffff;
   filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.3));
   display: flex;
   border-radius: 24px;
-  margin: 20px; }
+  margin: 5px; }
   .trails__card #border__color {
     width: 7%;
-    height: 144px; }
+    height: 130px; }
   .trails__card .card__text__wrapper {
     width: 100%;
     display: flex;
@@ -222,5 +221,9 @@ a {
       font-size: 13px; }
     .trails__card .card__text__wrapper h3 {
       font-weight: normal; }
+
+#point {
+  position: relative;
+  left: 50%; }
 
 /*# sourceMappingURL=Styles.css.map */
