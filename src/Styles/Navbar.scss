@@ -43,4 +43,55 @@
   img {
     width: 40px;
   }
+
+}
+
+.navbar__links__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $breakpoint-web) {
+  #icon__menu__mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  #icon__menu__mobile {
+    display: none;
+  }
+}
+
+
+@media (max-width: $breakpoint-mobile) {
+  .navbar {
+    height: 70px;
+    justify-content: space-around;
+
+    ul {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+  
+  .navbar__box {
+    img {
+      width: 18%;     
+    }
+  }
+
+  .navbar__box__links {
+    li {
+      display: none;
+    }
+    #openDevLogo {
+      display: none;
+    }
+  }
+
+  #icon__menu__mobile {
+    font-size: 32px;
+    margin-right: -50%;
+  }
 }

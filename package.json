@@ -8,9 +8,10 @@
     "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
-    "sass-loader": "^12.2.0",
+    "sass": "^1.43.3",
     "vega-embed": "^6.19.1",
     "vega-lite": "^5.1.1",
     "web-vitals": "^1.0.1"

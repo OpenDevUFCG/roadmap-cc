@@ -34,3 +34,15 @@
     position: relative;
     left: 50%;
 }
+
+@media (max-width: $breakpoint-mobile) {
+
+    .trails__card {
+        width: 300px; 
+    }
+
+    #point {
+        position: relative;
+        left: 45%;
+    }
+}

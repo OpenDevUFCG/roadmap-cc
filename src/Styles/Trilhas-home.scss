@@ -23,3 +23,28 @@
     justify-content: space-around;
     width: 65vw;
 }
+
+@media (max-width: $breakpoint-mobile) {
+    #trails {
+        background-image: none;
+        height: 250vh;
+        background: url('../assets/img/bg-home-trilhas-mb.svg') no-repeat;
+        background-position-y: 40%;
+        background-position-x: center;
+    }
+    h2{
+        font-size: 24px !important;
+        margin-top: 12%;
+    }
+
+    .trails__subtitle {
+        font-size: 14px;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+
+    .trails__card__wrapper {
+        width: 100vw;
+    }
+
+}
