@@ -22,7 +22,7 @@ export default [
         name:'Ciência de Dados',
         description: '',
         color: '#95C623',
-        url: '/dados'
+        url: '/dados',
+        text: 'Ciência de dados é uma área de estudo multidisciplinar envolvendo matemática, estatística, banco de dados, bussines intelligence, programação e aprendizado de máquina. Os estudos são realizados em dados provenientes de diferentes domínios como: música, financeiro, agronegócio etc. Os dados utilizados podem ser estruturados ou não estruturados, em outras palavras, dados tabulares ou não. A ciência de dados visa a extração de conhecimento por meio de técnicas de matemática e/ou estatística por meio de programação. As análises realizadas nos dados são feitas utilizando tais técnicas provenientes das áreas citadas com o objetivo de encontrar padrões ou obter insights para possíveis tomadas de decisão'
     }
-
 ]
