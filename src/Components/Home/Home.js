@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../Navbar'
-import data from '../Pt-Br'
+import {dataHome} from '../Pt-Br'
 import {Vega} from 'react-vega'
 import myData from './vis-home.json'
 
@@ -20,9 +20,9 @@ class Home extends React.Component {
         return (
             <>  
             <Navbar
-                navLink1={data.navLink1}
-                navLink2={data.navLink2}
-                navLink3={data.navLink3}
+                navLink1={dataHome.navLink1}
+                navLink2={dataHome.navLink2}
+                navLink3={dataHome.navLink3}
             />
             <section className="home">
 
