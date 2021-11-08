@@ -30,6 +30,21 @@ class GraphD3{
             .append("g")
             .attr("transform", "translate("
                 + this.margin.left + "," + this.margin.top + ")"); // margem no elemento g
+
+
+        // adicionando marker dos arcos
+        this.svg.append('defs')
+            .append('marker')
+            .attr('id', 'start-arrow')
+            .attr('viewBox', '0 -5 10 10')
+            .attr('refX', 0)
+            .attr('refY', 0)
+            .attr('markerWidth', 6)
+            .attr('markerHeight', 6)
+            .attr('orient', 'auto')
+            .attr('class', 'arrow')
+            .append('path')
+            .attr('d', 'M10,-5L0,0L10,5');
     }
   
     _setTreeFuncion(){
@@ -75,25 +90,29 @@ class GraphD3{
  
     addArcs(source){
         // Update the links...
-        let links = this.svg.selectAll('path.link')
-            .data(this.treeLinks, function(d) { return d.id})
+        let links = this.svg.selectAll('.link')
+            .data(this.treeLinks)
 
         // Enter any new links at the parent's previous position.
-        let linkEnter = links.enter().insert('path', "g") // insert elmento path dentro de g
-            .attr("class", "link")
+        let linkEnter = links.enter().append('g')
+            .attr('class', 'link')
+            .attr('marker-start', `url(#start-arrow)`)
+            // d é o caminho do arco, do nó 0 para o nó 0 - zera posição
+
+        linkEnter.append('path') // insert elmento path dentro de g
+            .attr('id', (d) => { return d.id})
             .attr('stroke', "black")
             .attr('fill', 'none')
             .attr('d', function(d){
-            let o = {x: source.x0, y: source.y0}
-            return diagonal(o, o)
-            });
-            // d é o caminho do arco, do nó 0 para o nó 0 - zera posição
+                let o = {x: source.x0, y: source.y0}
+                return diagonal(o, o)
+                });
 
         // UPDATE
         let linkUpdate = linkEnter.merge(links);
 
         // Transition back to the parent element position
-        linkUpdate.transition()
+        linkUpdate.select('path').transition()
             .duration(this.ANIMATIONDURATION)
             .attr('d', function(d){ let dd = diagonal(d, d.parent); return dd });
 
