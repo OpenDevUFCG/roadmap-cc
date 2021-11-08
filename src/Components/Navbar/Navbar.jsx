@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import logo from '../../assets/logo/logo-roadmap.svg'
 import openDevLogo from '../../assets/logo/logo-opendev.svg'
 
 
 
 class Navbar extends Component {
+
+    handleClick = (param) => {
+        this.props.history.push("/");
+    }
+
     render() { 
         return (  
             <nav className="navbar">
@@ -14,10 +19,12 @@ class Navbar extends Component {
                     <li className="navbar__item"><img src={ logo } alt="Logo Roadmap-cc" id="logo"/></li>
                     </div>
                     <div className="navbar__box__links">
-                    <li className="navbar__item hvr-underline-from-left"><Link to="/">Home</Link></li>
-                    <li className="navbar__item hvr-underline-from-left"><a href="#about">Sobre</a></li>
-                    <li className="navbar__item hvr-underline-from-left"><a href="#trails">Trilhas</a></li>
-                    <img src={ openDevLogo } alt="" id="openDevLogo" className="navbar__item"/>
+                    <li className="navbar__item hvr-underline-from-left"><a href="/" >Home</a></li>
+                    {/* <li className="navbar__item hvr-underline-from-left"><a href="#about">Sobre</a></li>
+                    <li className="navbar__item hvr-underline-from-left"><a href="#trails">Trilhas</a></li> */}
+                    <li className="navbar__item hvr-underline-from-left"><a onClick={this.handleClick} href="#about">Sobre</a></li>
+                    <li className="navbar__item hvr-underline-from-left"><a onClick={this.handleClick} href="#trails">Trilhas</a></li>
+                    <img src={ openDevLogo } alt="" id="openDevLogo" className="navbar__item"/>                    
                     </div>
                 </ul>
             </nav>
@@ -25,4 +32,4 @@ class Navbar extends Component {
     }
 }
  
-export default Navbar;
+export default withRouter(Navbar);
