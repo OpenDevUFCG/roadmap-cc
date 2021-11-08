@@ -7,7 +7,7 @@ import openDevLogo from '../../assets/logo/logo-opendev.svg'
 
 class Navbar extends Component {
 
-    handleClick = (param) => {
+    handleClick = () => {
         this.props.history.push("/");
     }
 
