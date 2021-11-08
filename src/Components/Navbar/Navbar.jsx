@@ -11,25 +11,23 @@ class Navbar extends Component {
         this.props.history.push("/");
     }
 
-    render() { 
-        return (  
+    render() {
+        return (
             <nav className="navbar">
                 <ul className="navbar__wrapper">
                     <div className="navbar__box">
-                    <li className="navbar__item"><img src={ logo } alt="Logo Roadmap-cc" id="logo"/></li>
+                        <li className="navbar__item"><img src={logo} alt="Logo Roadmap-cc" id="logo" /></li>
                     </div>
                     <div className="navbar__box__links">
-                    <li className="navbar__item hvr-underline-from-left"><a href="/" >Home</a></li>
-                    {/* <li className="navbar__item hvr-underline-from-left"><a href="#about">Sobre</a></li>
-                    <li className="navbar__item hvr-underline-from-left"><a href="#trails">Trilhas</a></li> */}
-                    <li className="navbar__item hvr-underline-from-left"><a onClick={this.handleClick} href="#about">Sobre</a></li>
-                    <li className="navbar__item hvr-underline-from-left"><a onClick={this.handleClick} href="#trails">Trilhas</a></li>
-                    <img src={ openDevLogo } alt="" id="openDevLogo" className="navbar__item"/>                    
+                        <li className="navbar__item hvr-underline-from-left"><a href="/" >Home</a></li>
+                        <li className="navbar__item hvr-underline-from-left"><a onClick={this.handleClick} href="#about">Sobre</a></li>
+                        <li className="navbar__item hvr-underline-from-left"><a onClick={this.handleClick} href="#trails">Trilhas</a></li>
+                        <img src={openDevLogo} alt="" id="openDevLogo" className="navbar__item" />
                     </div>
                 </ul>
             </nav>
         );
     }
 }
- 
+
 export default withRouter(Navbar);
