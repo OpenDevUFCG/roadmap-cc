@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from '../Navbar'
 import data from '../Pt-Br'
-import {Vega} from 'react-vega'
-import myData from './vis-home.json'
+import D3ForceGraph from "./d3-force-layout"
+import graphData from './miserables'
 
 
 class Home extends React.Component {
@@ -35,8 +35,7 @@ class Home extends React.Component {
                     </div>
                 </div>
 
-                <div className="grafo_container">
-                    <Vega spec={myData} id="grafo"/>  
+                <div className="grafo_container" id="graph_container">
                 </div>
                         
 
@@ -45,6 +44,10 @@ class Home extends React.Component {
         </>
 
         );
+    }
+
+    componentDidMount() {
+        this.ForceGraph = new D3ForceGraph(graphData.graphData) 
     }
 }
  
