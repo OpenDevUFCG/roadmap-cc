@@ -36,7 +36,7 @@ class Home extends React.Component {
                 </div>
 
                 <div className="grafo_container">
-                    <Vega spec={myData} id="grafo"/>  
+                    <Vega spec={myData}  id="grafo" actions={false}/>  
                 </div>
                         
 
