@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import data from './data'
+import {data} from './data'
 import Card from './Card'
 import { Link } from 'react-router-dom'
 
-class Trilhas extends React.Component {
+class Trilhas extends Component {
     constructor(props){
         super(props)
         this.state = {
@@ -19,8 +19,8 @@ class Trilhas extends React.Component {
                 <p className="trails__subtitle">{this.props.subtitle}</p>
                 <div className="trails__card__wrapper">
                     {data.map(trilha => (
-                        <Link to={trilha.url} style={{ color: 'black' }}>
-                            <Card key={trilha.name}
+                        <Link key={trilha.name} to={trilha.url} style={{ color: 'black' }}>
+                            <Card 
                                 name={trilha.name}
                                 description={trilha.description}
                                 color={trilha.color}

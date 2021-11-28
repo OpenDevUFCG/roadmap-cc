@@ -4,7 +4,7 @@ import { MapsPoint } from '../MapsPoint';
 export default function Card({
     name,
     description,
-    color,
+    color
 }
 
 ){
