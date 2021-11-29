@@ -1,17 +1,15 @@
 import * as d3 from 'd3'
 
+
 class D3ForceGraph{
 
     constructor(graphData){
         this.width = 600
         this.height = 700
-
-
         this.svg = null
         this.nodes = null
         this.links = null
         this.simulation = null
-
         this._initSvg()
         this._initSimulation()
         this._addData(graphData)
@@ -26,9 +24,11 @@ class D3ForceGraph{
 
     _initSimulation(){
         this.simulation = d3.forceSimulation()
-            .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(50).strength(0.3))
-            .force("charge", d3.forceManyBody().strength(-50))
-            .force("center", d3.forceCenter(this.width / 2, this.height / 2));
+            .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(50))
+            .force("charge", d3.forceManyBody())
+            .force("center", d3.forceCenter(this.width / 2, this.height / 2))
+            .alphaDecay(0)
+            .alphaTarget(0.4)
 
     }
 
@@ -40,14 +40,14 @@ class D3ForceGraph{
             .data(graphData.links)
             .enter().append("line")
             .attr("stroke-width", function(d) { return 1.5 })
-            .attr("stroke", "#999");
+            .attr("stroke", "#ccc");
 
         this.nodes = this.svg.append("g")
             .attr("class", "nodes")
             .selectAll("circle")
             .data(graphData.nodes)
             .enter().append("circle")
-            .attr("r", 13)
+            .attr("r", 10)
             .attr("stroke-width", 1.5)
             .attr("fill", function(d) {
                 let nodesColors = {"1": "#FFE4C4", "2":"#347953", "3":"#a6e8c8", "4":"#ff8b52", "5":"#94ff75", "6":"#f9eb39", "7":"#95C623"}
@@ -69,21 +69,19 @@ class D3ForceGraph{
                     .attr("y1", function(d) { return d.source.y; })
                     .attr("x2", function(d) { return d.target.x; })
                     .attr("y2", function(d) { return d.target.y; });
-        
+                
                 this.nodes
-                    .attr("cx", function(d) { return d.x; })
-                    .attr("cy", function(d) { return d.y; });
+                    .attr("cx", (d) => d.x)
+                    .attr("cy", (d) => d.y);
             });
 
         this.simulation.force("link")
             .links(graphData.links);
-
     }
 
     _drag(){
         let _dragstarted = (event) => {
-            console.log(this.simulation)
-            if (!event.active) this.simulation.alphaTarget(0.3).restart();
+            if (!event.active) this.simulation.alphaTarget(0.8).restart();
             event.subject.fx = event.subject.x;
             event.subject.fy = event.subject.y;
         }
@@ -94,7 +92,7 @@ class D3ForceGraph{
         }
     
         let _dragended = (event) => {
-            if (!event.active) this.simulation.alphaTarget(0);
+            if (!event.active) this.simulation.alphaTarget(0.4).alphaDecay(0);
             event.subject.fx = null;
             event.subject.fy = null;
         }
@@ -107,4 +105,3 @@ class D3ForceGraph{
 }
 
 export default D3ForceGraph;
-
