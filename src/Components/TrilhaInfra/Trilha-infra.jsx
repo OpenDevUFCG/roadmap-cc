@@ -2,6 +2,7 @@ import React from 'react';
 
 import d3Classe from "./d3-graph"
 
+
 class TrilhaInfra extends React.Component {
 
     constructor(props) {
@@ -12,7 +13,6 @@ class TrilhaInfra extends React.Component {
 
         this.grafo1 = this.grafo1.bind(this);
         this.grafo2 = this.grafo2.bind(this);
-
 
     }
 
@@ -76,5 +76,4 @@ class TrilhaInfra extends React.Component {
     }
 }
 
- 
 export default TrilhaInfra;

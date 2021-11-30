@@ -11,7 +11,6 @@ class GraphD3{
         const ANIMATIONDURATION = 750
 
         this.treeFunction = this._setTreeFuncion()
-
         this.svg = null;
         this.treeRootNode = null;    
         this.treeNodes = null;
@@ -30,7 +29,6 @@ class GraphD3{
             .append("g")
             .attr("transform", "translate("
                 + this.margin.left + "," + this.margin.top + ")"); // margem no elemento g
-
 
         // adicionando marker dos arcos
         this.svg.append('defs')
@@ -81,11 +79,9 @@ class GraphD3{
         // Compute the new tree layout.
         this.treeNodes = treeData.descendants()
         this.treeLinks = treeData.descendants().slice(1) // array de nó do nível 1
-
         let rectNodeSize = this.rectNodeSize
         // Normalize for fixed-depth.
         this.treeNodes.forEach(function(d){ d.y = d.depth * (rectNodeSize.width * 1.5)}); // 180 é a distancia entre os níveis da árvore
-    
     }
  
     addArcs(source){
@@ -124,8 +120,6 @@ class GraphD3{
             return diagonal(o, o)
             })
             .remove();
-        
-        
         // Store the old positions for transition.
         this.treeNodes.forEach(function(d){
             d.x0 = d.x;
@@ -141,8 +135,7 @@ class GraphD3{
             let a2 = [((sp[0] + dp[0])/ 2) , dp[1]]
             let path = 'M ' + sp + ' C ' + a1 + ' '+ a2 + ' ' + dp // d="M 0 255 L 180 125"
             return path
-        }
-    
+        }    
     }
     
     addNodes(source){
@@ -166,8 +159,7 @@ class GraphD3{
           .attr('width', this.rectNodeSize.width)
           .attr('height', this.rectNodeSize.height)
           .attr('fill', function (d) {return 'blue' })
-    
-    
+            
         // Add labels for the nodes
         nodeEnter.append('text')
           .attr("dy", ".35em")
@@ -177,8 +169,7 @@ class GraphD3{
             return "start" 
           })
           .text(function(d) { return d.data.name; });
-        
-    
+            
         // merge
         let allNodesSet = nodeEnter.merge(nodes); // junta todos os nós com os novos nós
     
@@ -188,8 +179,7 @@ class GraphD3{
           .attr("transform", function(d) { 
               return "translate(" + d.y + "," + d.x + ")";
           });
-    
-    
+
         // Remove any exiting nodes
         let nodeExit = nodes.exit().transition()
           .duration(this.ANIMATIONDURATION)
@@ -203,10 +193,8 @@ class GraphD3{
           .style('fill-opacity', 1e-6);
     
     }
-
     
     click(d) {
-
         if (d.children) {
             d._children = d.children;
             d.children = null;
