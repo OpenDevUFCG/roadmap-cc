@@ -3,9 +3,7 @@ import './Styles/Styles.css'
 import TrilhaInfra from './Components/TrilhaInfra/Trilha-infra'
 
 
-
-
-function App2() {
+function AppTrilhaInfra() {
   return ( 
     <>
     <TrilhaInfra/>
@@ -13,4 +11,4 @@ function App2() {
   );
 }
 
-export default App2;
+export default AppTrilhaInfra;
