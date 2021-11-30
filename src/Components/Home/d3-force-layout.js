@@ -25,7 +25,7 @@ class D3ForceGraph{
     _initSimulation(){
         this.simulation = d3.forceSimulation()
             .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(50))
-            .force("charge", d3.forceManyBody())
+            .force("charge", d3.forceManyBody().strength(-40))
             .force("center", d3.forceCenter(this.width / 2, this.height / 2))
             .alphaDecay(0)
             .alphaTarget(0.4)
