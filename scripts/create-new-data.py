@@ -32,6 +32,8 @@ df['trilha'] = df['trilha'].str.replace('Inteligência','Ciência de Dados', reg
 # df['trilha'] = df['trilha'].replace('Geral', np.nan, regex=True)
 # df['trilha'] = df['trilha'].apply(lambda x: ['Geral'] if pd.isnull(x) else ['Geral', x])
 
+# adicionando BD na trilha Engenharia de Software
+df.loc[df.nome == 'Banco de dados I', 'trilha'] = "Engenharia de Software"
 
 ''' MUDANÇAS NAS CADEIRAS '''
 # adiciona nome em cadeira que ta com nome NaN
