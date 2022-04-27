@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {data} from './data'
-import Card from './Card'
+import Card from '../Card/Card'
 import { Link } from 'react-router-dom'
+import styles from './styles.module.css'
 
 class Trilhas extends Component {
     constructor(props){
@@ -14,10 +15,10 @@ class Trilhas extends Component {
 
     render() {
         return (
-            <section id="trails">
-                <h2 className="trails__title">{this.props.title}</h2>
-                <p className="trails__subtitle">{this.props.subtitle}</p>
-                <div className="trails__card__wrapper">
+            <section id={styles.trails}>
+                <h2 className={styles.title}>{this.props.title}</h2>
+                <p className={styles.subtitle}>{this.props.subtitle}</p>
+                <div className={styles.cardsWrapper}>
                     {data.map(trilha => (
                         <Link key={trilha.name} to={trilha.url} style={{ color: 'black' }}>
                             <Card 

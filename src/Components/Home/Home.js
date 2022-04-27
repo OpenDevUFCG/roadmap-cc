@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './styles.module.css'
 import Navbar from '../Navbar'
 import miniLogo from '../../assets/img/miniGraph.svg'
 import {dataHome} from '../Pt-Br'
@@ -15,37 +16,21 @@ class Home extends React.Component {
             textBtn: this.props.btnText
         }
     }
-    
     render() { 
         return (
             <>  
-            <Navbar
-                navLink1={dataHome.navLink1}
-                navLink2={dataHome.navLink2}
-                navLink3={dataHome.navLink3}
-            />
-            <section className="home">
+            <section className={styles.home}>
 
-                <div className="home_container">
-                    <h1>{this.props.title}</h1>
-                    <p>{this.props.subtitle}</p>
-                    <div className="home__button__wrapper">
-                        <img src={miniLogo} id="mini__grafo"/>
-                        <button>{this.props.btnText}</button>
-                    </div>
+                <div className={styles.container}>
+                    <h1 className={styles.title}>{this.props.title}</h1>
+                    <p className={styles.subtitle}>{this.props.subtitle}</p>
                 </div>
-
-                <div className="grafo__container">
-                    <Vega spec={myData} id="grafo"/> 
+                <div className={styles.webGraphWrapper}>
+                    <Vega spec={myData} id={styles.graphWeb}/> 
                 </div>
-                        
-
-            </section>
-           
+            </section>     
         </>
-
         );
     }
 }
- 
 export default Home;
