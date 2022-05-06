@@ -6,8 +6,6 @@ import styles from './styles.module.css'
 
 export const TrilhaDinamica = () => {
 
-    const [show, setShow] = useState(false)
-
     const { rota } = useParams();
 
     return (

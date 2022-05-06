@@ -5,6 +5,14 @@ import {
     MenuList,
     MenuItem,
 } from '@chakra-ui/react'
+import { HamburgerIcon } from '@chakra-ui/icons';
+import { IconButton } from '@chakra-ui/react'
+import { AiFillHome, AiOutlineUsergroupDelete, AiOutlineNodeIndex, AiOutlineCoffee } from "react-icons/ai";
+import { Link } from 'react-router-dom';
+
+function scrollTop(){
+    window.scrollTo(500, 0)
+}
 
 export default function HamburgerMenu() {
     return (
@@ -16,18 +24,18 @@ export default function HamburgerMenu() {
                 variant='outline'
             />
             <MenuList>
-                <MenuItem icon={<AddIcon />} command='⌘T'>
-                New Tab
-                </MenuItem>
-                <MenuItem icon={<ExternalLinkIcon />} command='⌘N'>
-                New Window
-                </MenuItem>
-                <MenuItem icon={<RepeatIcon />} command='⌘⇧N'>
-                Open Closed Tab
-                </MenuItem>
-                <MenuItem icon={<EditIcon />} command='⌘O'>
-                Open File...
-                </MenuItem>
+            <Link to="/" onClick={scrollTop()}><MenuItem icon={<AiFillHome />}>
+                Home
+                </MenuItem></Link>
+                <Link to="/" onClick={scrollTop()}><MenuItem icon={<AiOutlineUsergroupDelete />}>
+                Sobre nós
+                </MenuItem></Link>
+                <Link to="/" onClick={scrollTop()}><MenuItem icon={<AiOutlineNodeIndex />} >
+                Trilhas
+                </MenuItem></Link>
+                <a href="https://opendevufcg.org/" target="_blank"><MenuItem icon={<AiOutlineCoffee />} >
+                Opendev
+                </MenuItem></a>
             </MenuList>
         </Menu>
     )
