@@ -1,15 +1,16 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import { MapsPoint } from '../MapsPoint';
 
 export default function Card({
     name,
     description,
     color,
-    url
 }
 
 ){
     return (
+        <>
+            <MapsPoint id="point"/>
             <div className="trails__card">
                 <div style={{backgroundColor: color}} id="border__color"></div>  
                 <div className="card__text__wrapper">
@@ -17,5 +18,6 @@ export default function Card({
                     <p>{description}</p>
                 </div>         
             </div>
+        </>
     )
 }

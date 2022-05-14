@@ -1,31 +1,35 @@
 #about {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url('../assets/img/undraw_Through_the_desert_re_1q2x.svg');
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: 50%;
-    background-size: 40%;
-}
-#logo__roadmap {
-   margin-top: 25%;
-   width: 250px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../assets/img/undraw_Through_the_desert_re_1q2x.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 50%;
+  background-size: 40%;
 
-}
-
-.title__about {
+  h2 {
     font-size: 40px;
     font-weight: 500;
-    padding-top:10%;
+    padding-top: 6%;
+    text-align: center;
     color: $navbar-links;
-    
-}
+  }
 
-.text__about {
-    padding-top: 40px;
-    padding-right: 20%;
+  p {
+    padding-top: 5%;
+    margin-left: 5%;
+    text-align:justify;
+    line-height: 30px;
     width: 50%;
+  }
+
+  img {
+    width: 20%;
+    margin-top: 15%;
+    margin-left: 40%;
+  }
+
+  
 }
