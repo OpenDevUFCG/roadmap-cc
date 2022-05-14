@@ -33,3 +33,34 @@
 
   
 }
+
+@media (max-width: $breakpoint-mobile) {
+  #about {  
+    background-image: none;
+    background: url('../assets/img/lines-bg2.svg') no-repeat;
+    background-position-x: center;
+    background-position-y:17%;
+
+    h2 {
+      margin-top: 18%;
+      font-size: 25px;    
+    }
+    p {
+      margin-top: 1%;
+      width: 90%;
+      height: 85vh;
+      font-size: 14px;
+      background: url('../assets/img/lines-bg1.svg') no-repeat;
+      background-position-x: 80%;
+      background-position-y: 100%;
+    }
+
+    img {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+
+}

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import data from './data'
 import Card from './Card'
-import dataTexts from '../Pt-Br'
 import { Link } from 'react-router-dom'
 
 class Trilhas extends React.Component {
