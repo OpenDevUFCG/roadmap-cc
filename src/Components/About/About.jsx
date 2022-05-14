@@ -13,9 +13,9 @@ class About extends Component {
         return (  
             <>
             <section id="about">
-                <h2 className="title__about">{this.props.title}</h2>
-                <p className="text__about">{this.props.text}</p>
-                <img src={ logo } alt="" id="logo__roadmap"/>
+                <h2>{this.props.title}</h2>
+                <p>{this.props.text}</p>
+                <img src={ logo } alt=""/>
             </section>
             </>
         );

@@ -1,73 +1,37 @@
-    $bg-navbar: #FAFAFA;
-    $bg-sidebar: #F9FFFB;
-    $navbar-links: #0E4749; 
-    $title-color: #292D34;
-    $subtitle-color: #7C828D;
-    $address-color: #A89F9F;
-    $bg-button: #E55812;
-    $category-text: #505050;
-    $bg-cards: #e2daeb;
+$bg-navbar: #fafafa;
+$bg-sidebar: #f9fffb;
+$navbar-links: #0e4749;
+$title-color: #292d34;
+$subtitle-color: #7c828d;
+$address-color: #a89f9f;
+$bg-button: #e55812;
+$category-text: #505050;
+$bg-cards: #e2daeb;
 
+$breakpoint-mobile: 425px;
+$breakpoint-tablet: 768px;
+$breakpoint-web: 1024px;
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 html {
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;  
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
-    text-decoration: none ;  
-}
-
-.container {
-  margin-right: auto; 
-  margin-left:  auto; 
-  padding-right: 10px; /* 3 */
-  padding-left:  10px; /* 3 */
-
+  text-decoration: none;
 }
 
 @mixin button {
-    background-color: $bg-button;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    font-weight: bold;
+  background-color: $bg-button;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
 }
-
-.hvr-underline-from-left {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    overflow: hidden;
-  }
-  .hvr-underline-from-left:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 22px;
-    left: 0;
-    right: 100%;
-    bottom: 0;
-    background: #0E4749;
-    height: 4px;
-    -webkit-transition-property: right;
-    transition-property: right;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-  .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
-    right: 0;
-  }

@@ -1,52 +1,97 @@
 .navbar {
-    width: 100%;
-    height: 85px;
-    background-color: $bg-navbar;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: fixed;
-    top: 0;
-    transition: top 0.3s;
-    z-index: 2;
-    }
-    
-    .navbar__wrapper {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        list-style-type: none;
-        padding-left: 80px;
-        padding-right: 60px;
-    }
-    
-    .navbar__box {
-        display: flex; 
-        margin-top: 15px;
-        padding-left: 3%;
-        width: 100%;
-    }
-    
-    .navbar__box__links {
-        display: flex;
-        justify-content: space-around;
-        width: 50%;
-        align-items: center;
-    }
+  width: 100%;
+  height: 85px;
+  background-color: $bg-navbar;
+  position: fixed;
+  top: 0;
+  transition: top 0.3s;
+  z-index: 2;
 
-    
-    .navbar__item a{
-        color: $navbar-links;
-        font-weight: 500;
-        padding-top: 10px;  
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 80px;
+    padding-right: 60px;
+
+    a {
+      color: $navbar-links;
+      font-weight: 500;
+      padding-top: 10px;
     }
-    
-    #logo {
-        width: 45%; 
-    
+  }
+}
+
+.navbar__box {
+  display: flex;
+  margin-top: 15px;
+  padding-left: 3%;
+  width: 100%;
+
+  img {
+    width: 7%;
+  }
+}
+
+.navbar__box__links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  align-items: center;
+
+  img {
+    width: 40px;
+  }
+
+}
+
+.navbar__links__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $breakpoint-web) {
+  #icon__menu__mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  #icon__menu__mobile {
+    display: none;
+  }
+}
+
+
+@media (max-width: $breakpoint-mobile) {
+  .navbar {
+    height: 70px;
+    justify-content: space-around;
+
+    ul {
+      padding-left: 16px;
+      padding-right: 16px;
     }
-    
+  }
+  
+  .navbar__box {
+    img {
+      width: 18%;     
+    }
+  }
+
+  .navbar__box__links {
+    li {
+      display: none;
+    }
     #openDevLogo {
-        
-        width: 40px;  
-        
+      display: none;
     }
-    
+  }
+
+  #icon__menu__mobile {
+    font-size: 32px;
+    margin-right: -50%;
+  }
+}
