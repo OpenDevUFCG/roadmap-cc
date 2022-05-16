@@ -1,6 +1,7 @@
 import React from 'react';
 
-import d3Classe from "./d3-graph"
+import GraphD3v2 from "../../d3-graph2"
+import dataAPI from "../../dataAPI"
 
 
 class TrilhaInfra extends React.Component {
@@ -11,8 +12,14 @@ class TrilhaInfra extends React.Component {
         this.treeGraph= null;
         this.state = { isToggleOn: true };
 
-        this.grafo1 = this.grafo1.bind(this);
-        this.grafo2 = this.grafo2.bind(this);
+        // a configuração do layout do grafo de cada trilha é única
+        // pois cada trilha possui um desenho único
+        // para desenvolver uma nova trilha basta experimentar o melhor valor para os dados abaixo
+        this.graphLayoutConfig = {
+            "levelRadius": 115,
+            "forceCollide": 60,
+            "forceX": 0.2
+        }
 
     }
 
@@ -21,58 +28,16 @@ class TrilhaInfra extends React.Component {
             <>
                 <section id="infra">
                     <div id="tree-container"></div>
-                    <button onClick={() => this.grafo1()} name="button">Grafo 1</button>
-                    <br></br>
-                    <hr></hr>
-                    <button onClick={() => this.grafo2()} name="button">Grafo 2</button>
+                    <div id="tooltip-container"></div>
                 </section>
             </> 
             
         )
     }
 
-    grafo1(){
-        let treeData1 =
-            {
-                "name": "Top Level",
-                "lvl":0,
-                "children": [
-                    { 
-                        "name": "Level 2: A",
-                        "children": [
-                        { "name": "Son of A" },
-                        { "name": "Daughter of A" }
-                        ]
-                    },
-                    { "name": "Level 2: B" }
-                ]
-            };
-        let treeRootNode = this.treeGraph.initTree(treeData1)
-        this.treeGraph.setTreeData(treeRootNode)
-    }
-
-    grafo2(){
-        let treeData2 =
-        {
-            "name": "Outros dados",
-            "lvl":0,
-            "children": [
-                { "name": "Level 2: B" },
-                { 
-                    "name": "Level 2: A",
-                    "children": [
-                    { "name": "Son of A" },
-                    { "name": "Daughter of A" }
-                    ]
-                }
-            ]
-        };
-        let treeRootNode2 = this.treeGraph.initTree(treeData2)
-        this.treeGraph.setTreeData(treeRootNode2)
-    }
-
     componentDidMount() {
-        this.treeGraph  = new d3Classe()
+        //this.treeGraph  = new d3Classe()
+        this.aa = new GraphD3v2(dataAPI.infraData, this.graphLayoutConfig)
     }
 }
 
