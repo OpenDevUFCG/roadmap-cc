@@ -1,4 +1,4 @@
-export default 
+export const dataHome =
     {
         navLink1: 'Home',
         navLink2: 'Sobre nós',

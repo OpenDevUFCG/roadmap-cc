@@ -1,0 +1,57 @@
+.home {
+    width: 100%;
+    height: 100vh;
+    margin-top: 1%;
+    display: flex;
+}
+
+
+@media (min-width: 1024px) {
+    .container {
+        width: 50%;
+        margin-left: 50px;
+        text-align: justify;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+    .mobileGraphWrapper {
+        display: none;
+    }
+}
+  
+@media (min-width: 768px) {
+    .container {
+        width: 50%;
+        margin-top: 200px;
+        margin-left: 40px;
+        text-align: justify;
+    }
+    .mobileGraphWrapper {
+        display: none;
+    }
+
+}
+  
+@media (max-width: 425px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+    .container {
+        width: 80%;
+        margin-top: 120px;
+        text-align: center;
+    }
+    .container p {
+        text-align: justify;
+        margin-top: 6%;
+    }
+    .webGraphWrapper {
+        display: none;
+    }
+}
+  

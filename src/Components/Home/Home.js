@@ -1,9 +1,16 @@
 import React from 'react';
+import styles from './styles.module.css'
 import Navbar from '../Navbar'
 import miniLogo from '../../assets/img/miniGraph.svg'
+<<<<<<< HEAD
 import data from '../Pt-Br'
 import D3ForceGraph from "./d3-force-layout"
 import graphData from './miserables'
+=======
+import {dataHome} from '../Pt-Br'
+import {Vega} from 'react-vega'
+import myData from './vis-home.json'
+>>>>>>> 808ff06772d4beab1fe7bcffee79593d6054f04c
 
 
 class Home extends React.Component {
@@ -15,25 +22,16 @@ class Home extends React.Component {
             textBtn: this.props.btnText
         }
     }
-    
     render() { 
         return (
             <>  
-            <Navbar
-                navLink1={data.navLink1}
-                navLink2={data.navLink2}
-                navLink3={data.navLink3}
-            />
-            <section className="home">
+            <section className={styles.home}>
 
-                <div className="home_container">
-                    <h1>{this.props.title}</h1>
-                    <p>{this.props.subtitle}</p>
-                    <div className="home__button__wrapper">
-                        <img src={miniLogo} id="mini__grafo"/>
-                        <button>{this.props.btnText}</button>
-                    </div>
+                <div className={styles.container}>
+                    <h1 className={styles.title}>{this.props.title}</h1>
+                    <p className={styles.subtitle}>{this.props.subtitle}</p>
                 </div>
+<<<<<<< HEAD
                 <div className="grafo_container" id="graph_container">
                 <div className="grafo__container">
                 </div>
@@ -42,8 +40,13 @@ class Home extends React.Component {
             
             
            
+=======
+                <div className={styles.webGraphWrapper}>
+                    <Vega spec={myData} id={styles.graphWeb}/> 
+                </div>
+            </section>     
+>>>>>>> 808ff06772d4beab1fe7bcffee79593d6054f04c
         </>
-
         );
     }
 
@@ -51,5 +54,8 @@ class Home extends React.Component {
         this.ForceGraph = new D3ForceGraph(graphData.graphData) 
     }
 }
+<<<<<<< HEAD
  
+=======
+>>>>>>> 808ff06772d4beab1fe7bcffee79593d6054f04c
 export default Home;
