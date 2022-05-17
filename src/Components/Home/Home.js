@@ -36,9 +36,11 @@ class Home extends React.Component {
                 </div>
                 <div className="grafo_container" id="graph_container">
                 <div className="grafo__container">
-                    <Vega spec={myData} id="grafo"/> 
-                </div
+                </div>
+                </div>
             </section>
+            
+            
            
         </>
 
