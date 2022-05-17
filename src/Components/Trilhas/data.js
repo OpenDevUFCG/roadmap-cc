@@ -22,7 +22,8 @@ export default [
         name:'Ciência de Dados',
         description: '"Acho que aqui cairia muito bem um gráfico."',
         color: '#95C623',
-        url: '/dados'
+        url: '/dados',
+        texto: '    O Cientista de Dados analisa problemas e encontra soluções. Para isso emprega conhecimento em Estatística, Matemática, Machine Learning, Análise de Dados e conhecimento da área de negócio. Programação aqui é usada como linguagem de script para criar uma sequência de ações para resolver um problema.    O profissional pode atuar em várias áreas como Machine Learn, Analises de Dados, Inteligência Artificial, Big Date, Redes Neurais, entre outros.',
     }
 
 ]
