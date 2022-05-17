@@ -4,7 +4,7 @@ import GraphD3v2 from "../../d3-graph2"
 import dataAPI from "../../dataAPI"
 
 
-class TrilhaInfra extends React.Component {
+class TrilhaDados extends React.Component {
 
     constructor(props) {
         super(props);
@@ -16,9 +16,9 @@ class TrilhaInfra extends React.Component {
         // pois cada trilha possui um desenho único
         // para desenvolver uma nova trilha basta experimentar o melhor valor para os dados abaixo
         this.graphLayoutConfig = {
-            "levelRadius": 115,
-            "forceCollide": 60,
-            "forceX": 0.2
+            "levelRadius": 0,
+            "forceCollide": 70,
+            "forceX": 0.09
         }
 
     }
@@ -26,7 +26,7 @@ class TrilhaInfra extends React.Component {
     render() { 
         return (
             <>
-                <section id="infra">
+                <section id="dados">
                     <div id="tree-container"></div>
                     <div id="tooltip-container"></div>
                 </section>
@@ -37,8 +37,8 @@ class TrilhaInfra extends React.Component {
 
     componentDidMount() {
         //this.treeGraph  = new d3Classe()
-        this.aa = new GraphD3v2(dataAPI.infraData, this.graphLayoutConfig)
+        this.aa = new GraphD3v2(dataAPI.ciencDadosData, this.graphLayoutConfig)
     }
 }
 
-export default TrilhaInfra;
+export default TrilhaDados;
