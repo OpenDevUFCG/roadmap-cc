@@ -2,16 +2,9 @@ import React from 'react';
 import styles from './styles.module.css'
 import Navbar from '../Navbar'
 import miniLogo from '../../assets/img/miniGraph.svg'
-<<<<<<< HEAD
 import data from '../Pt-Br'
 import D3ForceGraph from "./d3-force-layout"
 import graphData from './miserables'
-=======
-import {dataHome} from '../Pt-Br'
-import {Vega} from 'react-vega'
-import myData from './vis-home.json'
->>>>>>> 808ff06772d4beab1fe7bcffee79593d6054f04c
-
 
 class Home extends React.Component {
     constructor(props){
@@ -31,7 +24,6 @@ class Home extends React.Component {
                     <h1 className={styles.title}>{this.props.title}</h1>
                     <p className={styles.subtitle}>{this.props.subtitle}</p>
                 </div>
-<<<<<<< HEAD
                 <div className="grafo_container" id="graph_container">
                 <div className="grafo__container">
                 </div>
@@ -40,12 +32,6 @@ class Home extends React.Component {
             
             
            
-=======
-                <div className={styles.webGraphWrapper}>
-                    <Vega spec={myData} id={styles.graphWeb}/> 
-                </div>
-            </section>     
->>>>>>> 808ff06772d4beab1fe7bcffee79593d6054f04c
         </>
         );
     }
@@ -54,8 +40,5 @@ class Home extends React.Component {
         this.ForceGraph = new D3ForceGraph(graphData.graphData) 
     }
 }
-<<<<<<< HEAD
  
-=======
->>>>>>> 808ff06772d4beab1fe7bcffee79593d6054f04c
 export default Home;
