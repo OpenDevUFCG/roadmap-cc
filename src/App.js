@@ -1,27 +1,32 @@
 import React from 'react';
-import './Styles/Styles.css'
 import Home from './Components/Home/Home.js'
 import About from './Components/About'
 import Trilhas from './Components/Trilhas/Trilhas-home'
-import data from './Components/Pt-Br'
+import {dataHome} from './Components/Pt-Br'
+import Navbar from './Components/Navbar/index.js';
+import './app.css';
 
 
 function App() {
   return ( 
     <>
+    <Navbar/>
     <Home 
-      title={data.tituloPrincipal}
-      subtitle={data.subtituloPrincipal}
-      btnText={data.textoBotaoPrincipal}
-      miniText={data.miniTextoPrincipal}
+      title={dataHome.tituloPrincipal}
+      subtitle={dataHome.subtituloPrincipal}
+      btnText={dataHome.textoBotaoPrincipal}
+      miniText={dataHome.miniTextoPrincipal}
+      id="home"
     />
     <About
-      title={data.sobreNosTituloPrincipal}
-      text={data.sobreNosTexto}
+      title={dataHome.sobreNosTituloPrincipal}
+      text={dataHome.sobreNosTexto}
+      id="about"
     /> 
     <Trilhas
-      title={data.trilhasTextoPrincipal}
-      subtitle={data.trilhasSubtitulo}
+      title={dataHome.trilhasTextoPrincipal}
+      subtitle={dataHome.trilhasSubtitulo}
+      id="trails"
     /> 
     </>
   );
