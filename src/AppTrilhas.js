@@ -1,5 +1,5 @@
 import React from 'react';
-import './Styles/Styles.css'
+import './app.css'
 import TrilhaInfra from './Components/TrilhaInfra/Trilha-infra'
 import TrilhaDados from './Components/TrilhaDados/Trilha-dados'
 
