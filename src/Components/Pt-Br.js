@@ -3,8 +3,8 @@ export const dataHome =
         navLink1: 'Home',
         navLink2: 'Sobre nós',
         navLink3: 'Trilhas',
-        tituloPrincipal: 'Caminhos em CC',
-        subtituloPrincipal: 'Se sentiu perdido com a quantidade de cadeiras opcionais que o curso oferece? No roadmap você poderá visualizar de um modo interativo as disciplinas oferecidas pelo curso e escolher uma trilha de acordo com a profissão desejada.',
+        tituloPrincipal: 'Trilhas do curso de Ciência da Computação UFCG',
+        subtituloPrincipal: 'Se sentiu perdido com a quantidade de cadeiras opcionais que o curso oferece? No Roadmap você poderá visualizar de um modo interativo as disciplinas oferecidas pelo curso e escolher uma trilha de acordo com a profissão desejada.',
         textoBotaoPrincipal: 'Começar',
         miniTextoPrincipal: 'mini texto',
 

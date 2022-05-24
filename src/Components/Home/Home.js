@@ -23,6 +23,7 @@ class Home extends React.Component {
                 <div className={styles.container}>
                     <h1 className={styles.title}>{this.props.title}</h1>
                     <p className={styles.subtitle}>{this.props.subtitle}</p>
+                    <button id={styles.button}>Começar</button>
                 </div>
                 <div className="grafo_container" id="graph_container">
                 <div className="grafo__container">

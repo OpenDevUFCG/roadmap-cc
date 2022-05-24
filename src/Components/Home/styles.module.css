@@ -3,6 +3,7 @@
     height: 100vh;
     margin-top: 1%;
     display: flex;
+    justify-content: center;
 }
 
 
@@ -11,13 +12,40 @@
         width: 50%;
         margin-left: 50px;
         text-align: justify;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .title {
-        font-size: 32px;
+        margin-top: -8%;
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    .subtitle {
+        margin-top: 6%;
+        font-size: 18px;
+        font-weight: 500;
     }
     .mobileGraphWrapper {
         display: none;
+    }
+
+    #button {
+        margin-top: 12%;
+        width: 140px;
+        height: 50px;
+        background-color: #E55812;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #button:hover {
+        transform: scale(1.02)
     }
 }
   
@@ -51,6 +79,9 @@
         margin-top: 6%;
     }
     .webGraphWrapper {
+        display: none;
+    }
+    #button {
         display: none;
     }
 }
