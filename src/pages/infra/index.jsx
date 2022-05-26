@@ -1,7 +1,7 @@
 import React from 'react';
 
-import GraphD3v2 from "../../d3-graph2"
-import dataAPI from "../../dataAPI"
+import GraphD3v2 from "~/d3-graph2"
+import dataAPI from "~/dataAPI"
 
 
 class TrilhaInfra extends React.Component {

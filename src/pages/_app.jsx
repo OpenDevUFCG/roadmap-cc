@@ -1,4 +1,4 @@
-import '../styles/globals.css';
+import '~/styles/globals.css';
 import Head from 'next/head';
 import { ChakraProvider } from '@chakra-ui/react';
 import Navbar from '../components/Navbar/index.js';
