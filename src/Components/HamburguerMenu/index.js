@@ -8,10 +8,10 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { IconButton } from '@chakra-ui/react'
 import { AiFillHome, AiOutlineUsergroupDelete, AiOutlineNodeIndex, AiOutlineCoffee } from "react-icons/ai";
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 function scrollTop(){
-    window.scrollTo(500, 0)
+    typeof window !== "undefined" && window.scrollTo(500, 0)
 }
 
 export default function HamburgerMenu() {
@@ -24,13 +24,13 @@ export default function HamburgerMenu() {
                 variant='outline'
             />
             <MenuList>
-            <Link to="/" onClick={scrollTop()}><MenuItem icon={<AiFillHome />}>
+            <Link href="/" onClick={scrollTop()}><MenuItem icon={<AiFillHome />}>
                 Home
                 </MenuItem></Link>
-                <Link to="/" onClick={scrollTop()}><MenuItem icon={<AiOutlineUsergroupDelete />}>
+                <Link href="/" onClick={scrollTop()}><MenuItem icon={<AiOutlineUsergroupDelete />}>
                 Sobre nós
                 </MenuItem></Link>
-                <Link to="/" onClick={scrollTop()}><MenuItem icon={<AiOutlineNodeIndex />} >
+                <Link href="/" onClick={scrollTop()}><MenuItem icon={<AiOutlineNodeIndex />} >
                 Trilhas
                 </MenuItem></Link>
                 <a href="https://opendevufcg.org/" target="_blank"><MenuItem icon={<AiOutlineCoffee />} >

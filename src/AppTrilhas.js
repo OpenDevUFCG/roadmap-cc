@@ -1,7 +1,7 @@
 import React from 'react';
 import './app.css'
-import TrilhaInfra from './Components/TrilhaInfra/Trilha-infra'
-import TrilhaDados from './Components/TrilhaDados/Trilha-dados'
+import TrilhaInfra from './components/TrilhaInfra/Trilha-infra'
+import TrilhaDados from './components/TrilhaDados/Trilha-dados'
 
 
 function AppTrilhaInfra() {
