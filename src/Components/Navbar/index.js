@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./styles.module.css";
-import logo from "../../assets/logo/logo-roadmap.svg";
-import openDevLogo from "../../assets/logo/logo-opendev.svg";
+import logo from "~/assets/logo/logo-roadmap.svg";
+import openDevLogo from "~/assets/logo/logo-opendev.svg";
 import Link from "next/link";
-import MobileMenu from "../HamburguerMenu";
+import MobileMenu from "~/components/HamburguerMenu";
 import Image from "next/image";
 
 function scrollTop() {

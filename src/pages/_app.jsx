@@ -1,6 +1,8 @@
 import '../styles/globals.css';
 import Head from 'next/head';
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react';
+import Navbar from '../components/Navbar/index.js';
+
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -10,6 +12,7 @@ function MyApp({ Component, pageProps }) {
         <title>roadmap-cc</title>
       </Head>
       <ChakraProvider>
+        <Navbar/>
         <Component {...pageProps} />
       </ChakraProvider>
     </>

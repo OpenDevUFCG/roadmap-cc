@@ -3,7 +3,6 @@ import Home from '../components/Home/Home.js'
 import About from '../components/About'
 import Trilhas from '../components/Trilhas/Trilhas-home'
 import {dataHome} from '../components/Pt-Br'
-import Navbar from '../components/Navbar/index.js';
 import Router from "next/router";
 
 export default function Index() {
@@ -16,7 +15,6 @@ export default function Index() {
 
   return ( 
     <>
-    <Navbar/>
     <Home 
       title={dataHome.tituloPrincipal}
       subtitle={dataHome.subtituloPrincipal}
