@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './styles.module.css'
-import Navbar from '../Navbar'
-import miniLogo from '../../assets/img/miniGraph.svg'
-import data from '../Pt-Br'
+import Navbar from '~/components/Navbar'
+import miniLogo from '~/assets/img/miniGraph.svg'
+import data from '~/components/Pt-Br'
 import D3ForceGraph from "./d3-force-layout"
 import graphData from './miserables'
 

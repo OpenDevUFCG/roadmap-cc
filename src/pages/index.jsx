@@ -1,16 +1,20 @@
-import React from 'react';
-import Home from './Components/Home/Home.js'
-import About from './Components/About'
-import Trilhas from './Components/Trilhas/Trilhas-home'
-import {dataHome} from './Components/Pt-Br'
-import Navbar from './Components/Navbar/index.js';
-import './app.css';
+import React, {useEffect} from 'react';
+import Home from '../components/Home/Home.js'
+import About from '../components/About'
+import Trilhas from '../components/Trilhas/Trilhas-home'
+import {dataHome} from '../components/Pt-Br'
+import Router from "next/router";
 
+export default function Index() {
 
-function App() {
+  useEffect(() => {
+    if (Router.pathname === "/home") {
+      Router.push("/");
+    }
+  }, []);
+
   return ( 
     <>
-    <Navbar/>
     <Home 
       title={dataHome.tituloPrincipal}
       subtitle={dataHome.subtituloPrincipal}
@@ -31,5 +35,3 @@ function App() {
     </>
   );
 }
-
-export default App;

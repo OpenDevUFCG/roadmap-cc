@@ -3,6 +3,7 @@ node_modules
 /dist
 /.pnp
 .pnp.js
+.next
 
 # testing
 /coverage

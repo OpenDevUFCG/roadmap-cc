@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {data} from './data'
 import Card from '../Card/Card'
-import { Link } from 'react-router-dom'
+import Link from 'next/link';
 import styles from './styles.module.css'
 
 class Trilhas extends Component {
@@ -20,12 +20,14 @@ class Trilhas extends Component {
                 <p className={styles.subtitle}>{this.props.subtitle}</p>
                 <div className={styles.cardsWrapper}>
                     {data.map(trilha => (
-                        <Link key={trilha.name} to={trilha.url} style={{ color: 'black' }}>
-                            <Card 
-                                name={trilha.name}
-                                description={trilha.description}
-                                color={trilha.color}
-                            />
+                        <Link key={trilha.name} href={trilha.url}>
+                            <a>
+                                <Card 
+                                    name={trilha.name}
+                                    description={trilha.description}
+                                    color={trilha.color}
+                                    />
+                            </a>
                         </Link>
                     ))}
                 </div>

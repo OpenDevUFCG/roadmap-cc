@@ -12,7 +12,9 @@
 }
 
 .container {
-    width: 60%;
+    position: relative;
+    height: 75%;
+    width: 15%;
     list-style: none;
 }
 

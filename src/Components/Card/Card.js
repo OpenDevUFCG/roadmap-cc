@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapsPoint } from '../MapsPoint';
+import { MapsPoint } from '~/components/MapsPoint';
 import styles from './styles.module.css';
 
 export default function Card({

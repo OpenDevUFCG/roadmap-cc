@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../../assets/logo/logo-roadmap-simple.svg'
+import logo from '~/assets/logo/logo-roadmap-simple.svg'
 import styles from './styles.module.css'
 
 class About extends Component {
