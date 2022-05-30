@@ -12,9 +12,9 @@ export default function Card({
     return (
         <>
             <div className={styles.cardWrapper}>
-                <MapsPoint id={styles.point}/>
+                <MapsPoint className={styles.point}/>
                 <div className={styles.card}>
-                    <div style={{backgroundColor: color}} id={styles.borderColor}></div>  
+                    <div style={{backgroundColor: color}} className={styles.borderColor}></div>  
                     <div className={styles.textWrapper}>
                         <h3 style={{color: color}}>{name}</h3>
                         <p>{description}</p>

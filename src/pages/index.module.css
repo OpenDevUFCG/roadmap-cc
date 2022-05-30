@@ -1,11 +1,18 @@
-#about {
+.about {
     width: 100vw;
-    height: 90vh;
-    background-image: url('../../assets/img/about.svg');
+    height: 110vh;
+    background-image: url('../assets/img/about.svg');
     background-repeat: no-repeat;
     background-size: 500px;
     background-position-x: 90%;
     background-position-y: 50%;
+}
+
+.about::before{
+    content: '';
+    display: block;
+    height:      75px;
+    margin-top: -75px;
 }
 
 .title {
@@ -20,43 +27,43 @@
     margin-left: 4%;   
 }
 
-#logoRoadmap {
+.logoRoadmap {
     width: 20%;
     margin-top: 10%;
     margin-left: 40%;
 }
 
 @media (max-width: 1024px) {
-    #about {
-        background-image: url('../../assets/img/about.svg');
+    .about {
+        background-image: url('../assets/img/about.svg');
         background-repeat: no-repeat;
         background-size: 450px;
     }
-    #logoRoadmap {
+    .logoRoadmap {
         
         margin-top: 10%;
     }
 }
 
 @media (max-width: 768px) {
-    #about {
-        background-image: url('../../assets/img/about.svg');
+    .about {
+        background-image: url('../assets/img/about.svg');
         background-repeat: no-repeat;
         background-size: 350px;
     }
-    #logoRoadmap {
+    .logoRoadmap {
         margin-top: 5%;
         margin-left: 40%;
     }
 }
 
 @media (max-width: 425px) {
-    #about {
-        background: url('../../assets/img/lines-bg2.svg') no-repeat;
+    .about {
+        background: url('../assets/img/lines-bg2.svg') no-repeat;
         background-position-x: center;
         background-position-y: 10%;
     }
-    #logoRoadmap {
+    .logoRoadmap {
         display: none;
     }
 }
@@ -66,7 +73,7 @@
     .text {
         width: 80%;
         margin-left: 10%;
-        background: url('../../assets/img/lines-bg1.svg') no-repeat;
+        background: url('../assets/img/lines-bg1.svg') no-repeat;
         background-position-x: 80%;
         background-position-y: 100%;
     }

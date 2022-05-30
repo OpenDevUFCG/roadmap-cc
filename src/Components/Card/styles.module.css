@@ -17,7 +17,7 @@
     transform: scale(1.02)
 }
 
-#borderColor {
+.borderColor {
     width: 7%;
     height: 130px;
     border-radius: 24px 0 0 24px;
@@ -32,16 +32,16 @@
     
 }
 
-p.textWrapper {
+.textWrapper > p{
     text-align: center;
     font-size: 13px;
 }
 
-h3.textWrapper {
+.textWrapper > h3 {
     font-weight: normal;
 }
 
-#MapsPoint {
+.mapsPoint {
     width: 30px;
 }
 
@@ -51,7 +51,7 @@ h3.textWrapper {
         width: 300px; 
     }
 
-    #point {
+    .point {
         position: relative;
         left: 45%;
     }

@@ -1,11 +1,13 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import Home from '../components/Home/Home.js'
-import About from '../components/About'
+import logo from '~/assets/logo/logo-roadmap-simple.svg';
 import Trilhas from '../components/Trilhas/Trilhas-home'
-import {dataHome} from '../components/Pt-Br'
 import Router from "next/router";
+import styles from './index.module.css';
+import { useTranslation } from 'react-i18next';
 
 export default function Index() {
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (Router.pathname === "/home") {
@@ -13,25 +15,15 @@ export default function Index() {
     }
   }, []);
 
-  return ( 
-    <>
-    <Home 
-      title={dataHome.tituloPrincipal}
-      subtitle={dataHome.subtituloPrincipal}
-      btnText={dataHome.textoBotaoPrincipal}
-      miniText={dataHome.miniTextoPrincipal}
-      id="home"
-    />
-    <About
-      title={dataHome.sobreNosTituloPrincipal}
-      text={dataHome.sobreNosTexto}
-      id="about"
-    /> 
-    <Trilhas
-      title={dataHome.trilhasTextoPrincipal}
-      subtitle={dataHome.trilhasSubtitulo}
-      id="trails"
-    /> 
-    </>
+  return (
+    <main>
+      <Home />
+      <section className={styles.about} id="about">
+        <h2 className={styles.title}>{t("about.title")}</h2>
+        <p className={styles.text}>{t("about.text")}</p>
+        <img src={logo} alt="" className={styles.logoRoadmap} />
+      </section>
+      <Trilhas />
+    </main>
   );
 }

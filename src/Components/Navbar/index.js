@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.css";
-import logo from "~/assets/logo/logo-roadmap.svg";
+import logo from "~/assets/logo/logo-roadmap-full.svg";
 import openDevLogo from "~/assets/logo/logo-opendev.svg";
 import Link from "next/link";
 import MobileMenu from "~/components/HamburguerMenu";
@@ -13,9 +13,17 @@ function scrollTop() {
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
-      <div className={styles.container}>
-        <Image src={logo} onClick={scrollTop()} alt="Logo Roadmap-cc" id={styles.logoRoadmap} layout="fill" />
-      </div>
+      <Link href="/">
+        <a className={styles.container}>
+          <Image
+            src={logo}
+            onClick={scrollTop()}
+            alt="Logo Roadmap-cc"
+            className={styles.logoRoadmap}
+            layout="fill"
+          />
+        </a>
+      </Link>
       <ul className={styles.linksWrapper}>
         <li>
           <Link href="/" onClick={scrollTop()}>
@@ -23,16 +31,16 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link href="#about">Sobre</Link>
+          <Link href="/#about">Sobre</Link>
         </li>
         <li>
-          <Link href="#trails">Trilhas</Link>
+          <Link href="/#trails">Trilhas</Link>
         </li>
         <a href="https://opendevufcg.org/" target="_blank">
-          <img src={openDevLogo} alt="" id={styles.logoOpenDev} />
+          <img src={openDevLogo} alt="" className={styles.logoOpenDev} />
         </a>
       </ul>
-      <div id={styles.menuMobile}>
+      <div className={styles.menuMobile}>
         <MobileMenu />
       </div>
     </nav>
