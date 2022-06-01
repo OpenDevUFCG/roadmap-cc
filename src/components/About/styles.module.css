@@ -1,0 +1,73 @@
+#about {
+    width: 100vw;
+    height: 90vh;
+    background-image: url('../../assets/img/about.svg');
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position-x: 90%;
+    background-position-y: 50%;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+}
+.text {
+    font-weight: 200;
+    width: 50%;
+    text-align: justify;
+    margin-top: 8%;
+    margin-left: 4%;   
+}
+
+#logoRoadmap {
+    width: 20%;
+    margin-top: 10%;
+    margin-left: 40%;
+}
+
+@media (max-width: 1024px) {
+    #about {
+        background-image: url('../../assets/img/about.svg');
+        background-repeat: no-repeat;
+        background-size: 450px;
+    }
+    #logoRoadmap {
+        
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    #about {
+        background-image: url('../../assets/img/about.svg');
+        background-repeat: no-repeat;
+        background-size: 350px;
+    }
+    #logoRoadmap {
+        margin-top: 5%;
+        margin-left: 40%;
+    }
+}
+
+@media (max-width: 425px) {
+    #about {
+        background: url('../../assets/img/lines-bg2.svg') no-repeat;
+        background-position-x: center;
+        background-position-y: 10%;
+    }
+    #logoRoadmap {
+        display: none;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .text {
+        width: 80%;
+        margin-left: 10%;
+        background: url('../../assets/img/lines-bg1.svg') no-repeat;
+        background-position-x: 80%;
+        background-position-y: 100%;
+    }
+}
