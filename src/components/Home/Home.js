@@ -1,38 +1,29 @@
 import React from 'react';
 import styles from './styles.module.css'
-import Navbar from '~/components/Navbar'
-import miniLogo from '~/assets/img/miniGraph.svg'
-import data from '~/components/Pt-Br'
+import Link from 'next/link';
 import D3ForceGraph from "./d3-force-layout"
-import graphData from './miserables'
+import graphData from './miserables';
+import { withTranslation } from 'react-i18next';
 
 class Home extends React.Component {
-    constructor(props){
-        super(props)
-        this.state = {
-            title: this.props.title, 
-            subtitle: this.props.subtitle, 
-            textBtn: this.props.btnText
-        }
-    }
-    render() { 
+
+    render() {
+        const { t } = this.props;
         return (
             <>  
             <section className={styles.home}>
-
                 <div className={styles.container}>
-                    <h1 className={styles.title}>{this.props.title}</h1>
-                    <p className={styles.subtitle}>{this.props.subtitle}</p>
-                    <button id={styles.button}>Começar</button>
+                    <h1 className={styles.title}>{t('home.mainTitle')}</h1>
+                    <p className={styles.subtitle}>{t('home.subTitle')}</p>
+                    <Link href="#about">
+                        <button className={styles.button}>Começar</button>
+                    </Link>
                 </div>
                 <div className="grafo_container" id="graph_container">
                 <div className="grafo__container">
                 </div>
                 </div>
             </section>
-            
-            
-           
         </>
         );
     }
@@ -42,4 +33,4 @@ class Home extends React.Component {
     }
 }
  
-export default Home;
+export default withTranslation()(Home);

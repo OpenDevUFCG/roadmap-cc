@@ -13,8 +13,8 @@
 
 .container {
     position: relative;
-    height: 75%;
-    width: 15%;
+    height: 85%;
+    width: 23%;
     list-style: none;
 }
 
@@ -32,33 +32,33 @@
     color: #0E4749;
 }
 
-#logoRoadmap {
+.logoRoadmap {
     width: 32px;
 }
 
 @media (min-width: 1024px) {
-    #logoRoadmap {
+    .logoRoadmap {
         width: 48px;
         margin-left: 6%;
     }
-    #menuMobile {
+    .menuMobile {
         display: none;
     }
-    #logoOpenDev {
+    .logoOpenDev {
         width: 48px;
     }
 }
 @media (min-width: 768px) {
-    #logoRoadmap {
+    .logoRoadmap {
         width: 48px;
         margin-left: 6%;
     }
 
-    #menuMobile {
+    .menuMobile {
         display: none;
     }
 
-    #logoOpenDev {
+    .logoOpenDev {
         width: 40px;
     }
 }
@@ -92,10 +92,10 @@
         visibility: visible;
     }
     
-    #menuMobile {
+    .menuMobile {
         width: 32px;
     }
-    #logoRoadmap {
+    .logoRoadmap {
         width: 40px;
     }
 }

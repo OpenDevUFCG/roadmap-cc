@@ -1,6 +1,6 @@
-#trails {
+.trails {
     width: 100%;
-    height: 90vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -31,19 +31,19 @@
 }
 
 @media (max-width: 1024px) {
-    #trails {
+    .trails {
         background-size: 70%;
     }
 }
 
 @media (max-width: 768px) {
-    #trails {
+    .trails {
         background-size: 90%;
     }
 }
 
 @media (max-width: 425px) {
-    #trails {
+    .trails {
         background-image: url('../../assets/img/bg-home-trilhas-mb.svg');
         background-size: 50%;
         background-position-y: 80%;

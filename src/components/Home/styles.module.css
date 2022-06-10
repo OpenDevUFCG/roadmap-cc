@@ -31,7 +31,7 @@
         display: none;
     }
 
-    #button {
+    .button {
         margin-top: 12%;
         width: 140px;
         height: 50px;
@@ -43,7 +43,7 @@
         cursor: pointer;
     }
 
-    #button:hover {
+    .button:hover {
         transform: scale(1.02)
     }
 }
@@ -80,7 +80,7 @@
     .webGraphWrapper {
         display: none;
     }
-    #button {
+    .button {
         display: none;
     }
 }
