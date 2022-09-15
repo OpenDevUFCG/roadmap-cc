@@ -1,0 +1,18 @@
+.home{
+
+}
+
+@media (max-width: 1200px) {
+    .home {
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+    }
+}
+
+@media (max-width: 576px) {
+    .home {
+    }
+}
