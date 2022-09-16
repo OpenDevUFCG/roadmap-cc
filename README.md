@@ -57,20 +57,12 @@ $ git clone https://github.com/OpenDevUFCG/roadmap-cc.git
 $ cd roadmap-cc
 
 # instalar dependências
-$ yarn install
+$ npm install
 
 # servindo localmente com "hot reload" em localhost:8080
-$ yarn run serve
+$ npm run dev
 
-# construindo para produção e inicializando servidor
-$ yarn run build
-$ yarn start
-
-# gerando projeto estático
-$ yarn run generate
 ```
-
-Para explicação detalhada de como as coisas funcionam, verifique a [documentação do Vue.js].
 
 ## Dados
 
