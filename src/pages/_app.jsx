@@ -1,8 +1,6 @@
-import '~/styles/globals.css';
-import '~/i18n';
-import Head from 'next/head';
-import { ChakraProvider } from '@chakra-ui/react';
-
+import "~/styles/globals.css";
+import "~/i18n";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -11,11 +9,9 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>roadmap-cc</title>
       </Head>
-      <ChakraProvider>
-        <Component {...pageProps} />
-      </ChakraProvider>
+      <Component {...pageProps} />
     </>
   );
 }
 
-export default MyApp
+export default MyApp;
