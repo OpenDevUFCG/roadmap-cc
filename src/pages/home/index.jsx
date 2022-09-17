@@ -1,14 +1,12 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { Example } from '../../components/Example';
+import { Header } from '~/components/Header';
 import { Wrapper } from './styles';
 
 export default function Index() {
-  const { t } = useTranslation();
 
   return (
     <Wrapper>
-      <Example />
+      <Header />
     </Wrapper>
   );
 }
