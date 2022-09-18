@@ -9,6 +9,13 @@ export const Container = styled.div`
     align-items: center;
     padding: 3.7rem 4.4rem;
     background-color: rgba(252, 252, 252, 0.6);
+
+    @media (max-width: 428px){
+        padding-right: 2.7rem;
+        .header-logo {
+            display: none;
+        }
+    }
 `
 
 export const Navbar = styled.div`
@@ -33,6 +40,13 @@ export const Navbar = styled.div`
             text-decoration: underline;
         }
     }
+
+    @media (max-width: 428px){
+        gap: 1.8rem;
+        & > * {
+            font-size: 1.6rem;
+        }
+    }
 `
 
 export const AccessBar = styled.div`
@@ -48,6 +62,12 @@ export const AccessBar = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    @media (max-width: 768px){
+        & > a {
+            display: none;
+        }
     }
 `
 
@@ -114,5 +134,11 @@ export const CustomSelect = styled(Select)`
         font-weight: 700;
         font-size: 1.5rem;
         border: 0.15rem solid var(--light-grey);
+    }
+
+    @media (max-width: 428px){
+        & .Select__single-value {
+            font-size: 1.6rem;
+        }
     }
 `

@@ -31,7 +31,7 @@ export const Header = () => {
   return (
     <Container>
       <Link href="/home">
-        <a>
+        <a className="header-logo">
           <Image src={logo} />
         </a>
       </Link>
