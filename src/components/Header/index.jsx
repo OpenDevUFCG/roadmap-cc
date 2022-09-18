@@ -18,6 +18,10 @@ export const Header = () => {
   const { t } = useTranslation();
   const [currentLang, setCurrentLang] = useState(buildOption(i18n.language));
   const [availableLangs] = useState(Object.keys(i18n.options.resources).map(buildOption));
+  
+  const getClassActiveRoute = useCallback(
+    (routeName) => router.pathname === routeName ? 'nav-checked' : undefined, 
+    [router.pathname]);
 
   const changeLang = useCallback((newLang) => {
     i18n.changeLanguage(newLang.value);
@@ -33,13 +37,13 @@ export const Header = () => {
       </Link>
       <Navbar>
         <Link href="/home">
-          <a className={router.pathname === '/home' ? 'nav-checked' : undefined}>{t('nav.home')}</a>
+          <a className={getClassActiveRoute('/home')}>{t('nav.home')}</a>
         </Link>
         <Link href="/trails">
-          <a className={router.pathname === '/trails' ? 'nav-checked' : undefined}>{t('nav.trails')}</a>
+          <a className={getClassActiveRoute('/trails')}>{t('nav.trails')}</a>
         </Link>
         <Link href="/about">
-          <a className={router.pathname === '/about' ? 'nav-checked' : undefined}>{t('nav.about')}</a>
+          <a className={getClassActiveRoute('/about')}>{t('nav.about')}</a>
         </Link>
       </Navbar>
       <AccessBar>
