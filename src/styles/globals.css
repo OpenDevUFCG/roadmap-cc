@@ -18,8 +18,10 @@ body {
   --light-pink: #8525414d;
   --light-grey: #cbcbcb;
   --white: #fff;
+  --orange: #FEA676;
 }
 
 html {
   font-size: 62.5%;
 }
+
