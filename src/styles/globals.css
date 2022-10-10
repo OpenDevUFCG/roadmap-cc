@@ -1,29 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Rambla:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rambla:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
-#root, body {
-    font-family: 'Poppins', sans-serif !important;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    max-width: 100%;
-    overflow-x: hidden;
+#root,
+body {
+  font-family: "Poppins", sans-serif !important;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
 
-    --darker-blue: #002626;
-    --dark-blue: #0E4749;
-    --green: #95C623;
-    --orange: #E55812;
-    --light-orange: #FC8E51;
-    --light-pink: #8525414D;
-    --light-grey: #CBCBCB;  
-    --white: #fff;
+  --darker-blue: #002626;
+  --dark-blue: #0e4749;
+  --green: #95c623;
+  --orange: #e55812;
+  --light-orange: #fc8e51;
+  --light-pink: #8525414d;
+  --light-grey: #cbcbcb;
+  --white: #fff;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-size: 1.6rem;
-    background: url('../assets/img/background.png') repeat;
+  font-size: 1.6rem;
+  background: url("../assets/img/background.png") repeat;
 }

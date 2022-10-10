@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { BsInstagram, BsGithub, BsDiscord } from 'react-icons/bs';
-import { SiOpencollective } from 'react-icons/si';
 import Select from 'react-select';
 
 export const Container = styled.div`
@@ -9,13 +7,6 @@ export const Container = styled.div`
     align-items: center;
     padding: 3.7rem 4.4rem;
     background-color: rgba(252, 252, 252, 0.6);
-
-    @media (max-width: 428px){
-        padding-right: 2.7rem;
-        .header-logo {
-            display: none;
-        }
-    }
 `
 
 export const Navbar = styled.div`
@@ -32,8 +23,7 @@ export const Navbar = styled.div`
         line-height: 3rem;
 
         &:hover {
-            transform: scale(1.05);
-
+            color: var(--light-orange);
         }
         &.nav-checked{
             color: var(--light-orange);
@@ -41,10 +31,11 @@ export const Navbar = styled.div`
         }
     }
 
-    @media (max-width: 428px){
-        gap: 1.8rem;
+    @media (max-width: 768px){
+        flex-direction: column;
+        gap: 2vh;
         & > * {
-            font-size: 1.6rem;
+            font-size: 1.8rem;
         }
     }
 `
@@ -62,33 +53,21 @@ export const AccessBar = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        color: var(--white);
+        transition: all 0.15s ease-in-out;
+
+        :hover {
+            transform: scale(1.08);
+        }
     }
 
     @media (max-width: 768px){
-        & > a {
-            display: none;
-        }
+        margin-top: 3vh;
+        display: grid;
+        grid-template-columns: 15vw 1fr;
+        column-gap: 0;
+        row-gap: 3vh;
     }
-`
-
-export const Instagram = styled(BsInstagram)`
-    color: var(--white);
-    font-size: 2rem;
-`
-
-export const OpenCollective = styled(SiOpencollective)`
-    color: var(--white);
-    font-size: 2.1rem;
-`
-
-export const Github = styled(BsGithub)`
-    color: var(--white);
-    font-size: 2rem;
-`
-
-export const Discord = styled(BsDiscord)`
-    color: var(--white);
-    font-size: 1.9rem;
 `
 
 export const CustomSelect = styled(Select)`
@@ -137,6 +116,10 @@ export const CustomSelect = styled(Select)`
     }
 
     @media (max-width: 428px){
+        & .Select__control{
+            min-width: 24vw;
+        }
+
         & .Select__single-value {
             font-size: 1.6rem;
         }
