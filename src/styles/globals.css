@@ -12,12 +12,14 @@ body {
 
   --darker-blue: #002626;
   --dark-blue: #0e4749;
+  --dark-grey: #292D34;
   --green: #95c623;
   --orange: #e55812;
   --light-orange: #fc8e51;
   --light-pink: #8525414d;
   --light-grey: #cbcbcb;
   --white: #fff;
+  --orange: #FEA676;
 }
 
 html {
@@ -27,4 +29,3 @@ html {
 body {
   font-size: 1.6rem;
   background: url("../assets/img/background.png") repeat;
-}
