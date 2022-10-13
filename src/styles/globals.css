@@ -20,6 +20,7 @@ body {
   --light-grey: #cbcbcb;
   --white: #fff;
   --orange: #FEA676;
+
 }
 
 html {
@@ -29,3 +30,4 @@ html {
 body {
   font-size: 1.6rem;
   background: url("../assets/img/background.png") repeat;
+}
