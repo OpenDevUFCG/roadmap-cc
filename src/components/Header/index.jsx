@@ -56,7 +56,7 @@ export const Header = () => {
             <BsInstagram />
           </a>
         </Link>
-        <Link href="https://www.instagram.com/opendevufcg/" prefetch={false}>
+        <Link href="https://opencollective.com/opendevufcg" prefetch={false}>
           <a target="_blank">
             <SiOpencollective />
           </a>
@@ -66,7 +66,7 @@ export const Header = () => {
             <BsGithub />
           </a>
         </Link>
-        <Link href="https://www.instagram.com/opendevufcg/" prefetch={false}>
+        <Link href="https://discord.gg/jSFq7XyGe3" prefetch={false}>
           <a target="_blank">
             <BsDiscord />
           </a>
