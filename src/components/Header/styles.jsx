@@ -117,11 +117,15 @@ export const CustomSelect = styled(Select)`
 
     @media (max-width: 428px){
         & .Select__control{
-            min-width: 24vw;
+            min-width: max-content;
         }
 
         & .Select__single-value {
             font-size: 1.6rem;
+        }
+
+        & .Select__menu-list {
+            width: max-content;
         }
     }
 `
