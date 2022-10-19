@@ -31,7 +31,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link href="/#about">Sobre</Link>
+          <Link href="/AboutUs">Sobre</Link>
         </li>
         <li>
           <Link href="/#trails">Trilhas</Link>
