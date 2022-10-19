@@ -1,0 +1,74 @@
+.aboutUs {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16%;
+
+}
+
+.firstStepAboutUS {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.firstStepContentWrapper {
+    width: 60%;
+}
+
+.firstStepContentWrapper h2{
+    font-size: 32px;
+    color: #418671;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-bottom: 4%;
+}
+
+.firstStepContentWrapper p, .secondStepContentWrapper p {
+    font-size: 18px;
+    color: #292D34;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.firstStepContentWrapper p:last-child {
+    margin-top: 4%;
+}
+
+.firstStepGraphWrapper {
+    width: 489px;
+    height: 375px;
+    background-color: red;
+}
+
+.secondStepAboutUs {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6%;
+
+}
+.secondStepContentWrapper h2 {
+    font-size: 32px;
+    color: #418671;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.contribuitorsWrapper {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.redirectCardsWrapper {
+    width: 80vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
