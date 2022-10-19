@@ -11,8 +11,27 @@
             "startButton": "Começar"
         },
         "about": {
-            "title": "Sobre nós",
-            "text": "O nosso curso de ciência da computação oferece diversos campos de atuação. O estudante ao chegar em determinado momento do curso tem a possibilidade de escolher qual caminho trilhar de acordo com a sua vontade. Mas com tantas ofertas, como saber qual cadeiras escolher para chegar na profissão desejada? O roadmap nasceu da necessidade de descrever melhor as oportunidades que o curso pode oferecer, descrevendo as cadeiras em um sistema de trilhas para que você consiga atuar em uma profissão específica."
+            "mainTitle": "Sobre nós",
+            "firstPartDescription": "Cada trilha representa quais cadeiras você vai pagar para focar em uma determinada área mas, claro, isso não significa que você deve pagar elas se não você não vai ser um verdadeiro engenherio de software ou ciêntista de dados, elas servem como um guia, mas no final das contas você faz o seu caminho nesse curso.",
+            "secondPartDescription": "O Roadmap é um projeto da <strong>OpenDevUFCG</strong> que nasceu da necessidade descrever melhor as oportunidades que o curso pode oferecer, mostrando as disciplinas em um sistema de trilhas para que você consiga atuar em uma área específica da sua escolha.",
+            "collaborationsTitle": "Contribuidores",
+            "collaborationsDescription": "Aqueles que fizeram esse projeto acontecer desde o início até o que  ele é hoje e que, portanto, merecem serem reconhecidos e agradecidos por todo o tempo e o esforço investidos nesse projeto. São vocês que movem a cultura <strong>open source</strong> dentro desse curso e que realmente fazem ela acontecer!",    
+            "cards": {
+                "github": {
+                    "id": "github",
+                    "title": "Acesse nosso github!",
+                    "description": "Aqui você pode acessar todos os nossos repositórios. Não esqueça de deixar uma star em cada um!",
+                    "redirectCard": "https://github.com/OpenDevUFCG",
+                    "icon": "./github.svg"
+                    },
+                "discord": {
+                    "id": "discord",
+                    "title": "Fale conosco no discord",
+                    "description": "Um bate-papo descontraído com a nossa comunidade, sinta-se à vontade pra compartilhar  ideias, tirar dúvidas...",
+                    "redirectCard": "https://discord.gg/ajZpnAUmMz",
+                    "icon": "./discord.svg"
+                    }
+            }
         },
         "trails": {
             "title": "Trilhas",
