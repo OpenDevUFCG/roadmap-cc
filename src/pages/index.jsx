@@ -18,11 +18,6 @@ export default function Index() {
   return (
     <main>
       <Home />
-      <section className={styles.about} id="about">
-        <h2 className={styles.title}>{t("about.title")}</h2>
-        <p className={styles.text}>{t("about.text")}</p>
-        <img src={logo} alt="" className={styles.logoRoadmap} />
-      </section>
       <Trilhas />
     </main>
   );
