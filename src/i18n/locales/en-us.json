@@ -1,0 +1,11 @@
+{
+    "translations": {
+        "lang": "EN-US",
+        "lang_name": "English",
+        "nav": {
+            "home": "Home",
+            "trails": "Trails",
+            "about": "About Us"
+        }
+    }
+}

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rambla:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 #root,
 body {
@@ -19,9 +20,14 @@ body {
   --light-grey: #cbcbcb;
   --white: #fff;
   --orange: #FEA676;
+
 }
 
 html {
   font-size: 62.5%;
 }
 
+body {
+  font-size: 1.6rem;
+  background: url("../assets/img/background.png") repeat;
+}

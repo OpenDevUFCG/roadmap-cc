@@ -1,0 +1,11 @@
+{
+    "translations": {
+        "lang": "ES-ES",
+        "lang_name": "Español",
+        "nav": {
+            "home": "Inicio",
+            "trails": "Caminos",
+            "about": "Sobre Nosotros"
+        }
+    }
+}
