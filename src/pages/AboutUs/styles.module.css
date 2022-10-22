@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 16%;
+    margin-top: 8%;
 
 }
 
@@ -48,7 +48,8 @@
     width: 80vw;
     display: flex;
     flex-direction: column;
-    margin-top: 6%;
+    align-items: center;
+    margin-top: 2%;
 
 }
 .secondStepContentWrapper h2 {
@@ -60,8 +61,9 @@
 
 .contribuitorsWrapper {
     display: flex;
-    width: 300px;
-    justify-content: space-between;
+    width: 80vw;
+    height: 28vh;
+    flex-wrap: wrap;
     margin-top: 2%;
 }
 
@@ -69,6 +71,6 @@
     width: 80vw;
     height: 40vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around ;
     align-items: center;
 }
