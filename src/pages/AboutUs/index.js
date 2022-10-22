@@ -16,7 +16,11 @@ export default function AboutUs() {
                 <div className={styles.firstStepContentWrapper}>
                     <h2>{t("about.mainTitle")}</h2>
                     <p>{ t('about.firstPartDescription')}</p>
-                    <p>{ t('about.secondPartDescription')}</p>
+                    <p>
+                        { t('about.secondPartDescription')}
+                        <strong>{ t('about.openDevName')}</strong>
+                        { t('about.thirdPartDescription')}
+                    </p>
                 </div>
                 <div className={styles.firstStepGraphWrapper}></div>
             </section>
@@ -24,7 +28,11 @@ export default function AboutUs() {
             <section className={ styles.secondStepAboutUs}>
                 <div className={ styles.secondStepContentWrapper}>
                     <h2>{t("about.collaborationsTitle")}</h2>
-                    <p>{t("about.collaborationsDescription")}</p>
+                    <p>
+                        {t("about.firstPartCollaborationsDescription")}
+                        <strong>{t("about.openSource")}</strong>
+                        {t("about.secondPartCollaborationsDescription")}
+                    </p>
                 </div>
                 <div className={ styles.contribuitorsWrapper}>
                     <Contribuitors/>
