@@ -5,7 +5,6 @@
     justify-content: center;
     align-items: center;
     margin-top: 8%;
-
 }
 
 .firstStepAboutUS {
@@ -39,9 +38,11 @@
 }
 
 .firstStepGraphWrapper {
-    width: 489px;
+    width: 488px;
     height: 375px;
-    background-color: red;
+    background-image: url('../../assets//img/graph.svg');
+    background-size:contain;
+    background-repeat: no-repeat;
 }
 
 .secondStepAboutUs {
