@@ -1,44 +1,40 @@
-import React, { Component } from 'react'
-import styles from './style.module.css'
+import React, { Component, useEffect, useState } from 'react'
+import styles from './styles.module.css'
 import axios from 'axios'
 
 const api = {
-    baseUrl: "https://api.github.com",
-    client_id: "20dcfe151c0e8262",
-    client_secret: "Pmik0DGVyaSywTmPeQGLnyv5uuxXABsn+iBfZMed1sQ="
+    baseUrl: "https://api.github.com"
 }
 
-class Contribuitors extends Component{
-    constructor() {
-        super()
-        this.state = {
-            githubData: []
-        }
-    }
+export default function Contribuitors() {
 
-    componentDidMount() {
-        axios   
-          .get(api.baseUrl + "/repos/OpenDevUFCG/roadmap-cc/contributors")
-          .then((res) => { 
-            this.setState({githubData: res.data.items})
-            console.log("Infos api", res)
-          })
-        }
+    const [githubData, setGithubData] = useState([]);
 
-    render() {
-        const { githubData } = this.state
-        return(
-            <>
-                {githubData.map((icon) => (
-                    <div>
-                        {icon}
-                    </div>
+    useEffect(() => {
+        axios
+            .get(api.baseUrl + "/repos/OpenDevUFCG/roadmap-cc/contributors")
+            .then((res) => {
+                setGithubData(res.data)
+                console.warn(res.data)
+            });
+    }, []);
 
-                ))}
-            </>
-        )
+    return (
+        <>
+            {githubData.map((contributorData) => (
+                <div className={styles.avatarWrapper}>
+                    <a href={`https://github.com/${contributorData.login}`} target="_blank">
+                    <img 
+                        className={styles.avatar}
+                        key={contributorData.login}
+                        src={contributorData.avatar_url} 
+                        alt={contributorData.login}
+                    />
+                    </a>
+                </div>
 
-    }
-}
+            ))}
+        </>
+    );
 
-export default Contribuitors
+};
