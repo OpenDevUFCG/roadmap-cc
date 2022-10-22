@@ -9,7 +9,7 @@ export default function CardGithub(){
 
     return (
         <>
-            <a href={t("about.cards.discord.redirectCard")} target="_blank">
+            <a href={t("about.cards.github.redirectCard")} target="_blank">
                 <div className={styles.card}>
                     <div className={styles.contentWrapper}>
                         <h2>{t("about.cards.github.title")}</h2>
