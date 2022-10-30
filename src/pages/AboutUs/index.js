@@ -2,7 +2,9 @@ import React, { useEffect } from 'react'
 import styles from './styles.module.css'
 import CardGithub from '../../components/Card/CardGithub';
 import CardDiscord from '../../components/Card/CardDiscord';
-import Contribuitors from '../../components/Contributors'
+import Contribuitors from '../../components/Contributors';
+import MobileCardDiscord from '../../components/Card/MobileCardDiscord'
+import MobileCardGithub from '../../components/Card/MobileCardGithub'
 import { useTranslation } from 'react-i18next';
 
 export default function AboutUs() {
@@ -39,8 +41,14 @@ export default function AboutUs() {
                 </div>
             </section>
             <section className={styles.redirectCardsWrapper}>
-                <CardGithub/>
-                <CardDiscord/>
+                <div className={styles.webCards}>
+                    <CardGithub/>
+                    <CardDiscord/>
+                </div>
+                <div className={styles.mobileCards}>
+                    <MobileCardDiscord/>
+                    <MobileCardGithub/>
+                </div>
             </section>
 
         </section>
