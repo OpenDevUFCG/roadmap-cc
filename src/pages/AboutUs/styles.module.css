@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     gap: 80px;
+
 }
 
 .firstStepContentWrapper {
@@ -40,9 +41,10 @@
 .firstStepGraphWrapper {
     width: 488px;
     height: 375px;
-    background-image: url('../../assets//img/graph.svg');
+    background-image: url('../../assets/img/graph.svg');
     background-size:contain;
     background-repeat: no-repeat;
+
 }
 
 .secondStepAboutUs {
@@ -69,9 +71,103 @@
 }
 
 .redirectCardsWrapper {
-    width: 80vw;
-    height: 40vh;
+    width: 100vw;
+    height: 60vh;
     display: flex;
-    justify-content: space-around ;
     align-items: center;
+    justify-content: space-around;
+}
+
+.webCards {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobileCards {
+    display: none;
+}
+
+@media (max-width:1025px) {
+    .firstStepAboutUS {
+        margin-top: 6%;
+    }
+    .mobileCards {
+        display: none;
+    }
+
+    .redirectCardsWrapper {
+        margin-top: -6%;
+    }
+
+}
+
+@media (max-width:801px) {
+    .firstStepGraphWrapper {
+        margin-top: 6%;
+    }
+
+    .redirectCardsWrapper {
+        margin-top: -80px;
+    }
+
+    .mobileCards {
+        display: none;
+    }
+
+}
+
+@media (max-width:600px) {
+    .firstStepAboutUS {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    .firstStepGraphWrapper {
+        margin-top: 80px;
+        width: 280px;
+        height: 400px;
+    }
+
+    .firstStepContentWrapper {
+        width: 100%;
+    }
+
+    .contribuitorsWrapper {
+        margin-bottom: 20%;
+    }
+
+    .mobileCards {
+        display: flex;
+        width: 100vw;
+        height: 20vh;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .webCards {
+        display: none;
+        
+    }
+
+}
+
+@media (min-width:480px) {
+    .redirectCardsWrapper {
+        margin-top: 60px;
+    }
+}
+@media (max-width:480px) {
+    .firstStepContentWrapper h2{
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .secondStepContentWrapper h2 {
+        font-size: 24px;
+        text-align: center;
+        margin-top: 24px;
+    }
 }
