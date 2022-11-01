@@ -6,6 +6,11 @@
             "home": "Home",
             "trails": "Trilhas",
             "about": "Sobre nós"
+        },
+        "about": {
+            "mainTitle": "Sobre nós",
+            "firstPartDescription": "Cada trilha representa quais cadeiras você vai pagar para focar em uma determinada área mas, claro, isso não significa que você deve pagar elas se não você não vai ser um verdadeiro engenherio de software ou ciêntista de dados, elas servem como um guia, mas no final das contas você faz o seu caminho nesse curso.",
+            "secondPartDescription": "O Roadmap é um projeto da <strong>OpenDevUFCG</strong> que nasceu da necessidade descrever melhor as oportunidades que o curso pode oferecer, mostrando as disciplinas em um sistema de trilhas para que você consiga atuar em uma área específica da sua escolha."
         }
     }
 }
