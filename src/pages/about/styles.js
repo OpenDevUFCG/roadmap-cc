@@ -25,7 +25,7 @@ export const Texts = styled.div`
 
 export const Wrapper = styled.div`
   
-  width: 84vw;
+  width: 80vw;
 `;
 
 export const Title = styled.div`
@@ -49,5 +49,29 @@ export const Paragraph = styled.div`
 export const Graph = styled.div`
   
   margin-top: 2vh;
+
+`;
+
+export const Contribuitors = styled.div`
+  
+  width: 80vw;
+  
+
+  @media (min-width: 480px) {
+    margin-top: 4vh;
+  }
+
+  @media (max-width: 480px) {
+    text-align: center;
+  }
+`;
+
+export const Container = styled.div`
+  
+  width: 80vw;
+  height: 28vh;
+  margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
 
 `;
