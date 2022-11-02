@@ -26,6 +26,7 @@ export const Texts = styled.div`
 export const Wrapper = styled.div`
   
   width: 80vw;
+  text-align: center;
 `;
 
 export const Title = styled.div`
